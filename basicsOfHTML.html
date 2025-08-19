@@ -1,0 +1,2438 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+
+    <head>
+        <title>HTML Demo - Rebytre</title>
+        <link rel="icon" type="image/png" href="D:\Coding Files\HTML Files\personalHTMLDemoIcon.png">
+        <link rel="stylesheet" href="HTMLDemoFile.css">
+        <style>
+            #spanDemoE1{
+                color:#ff0000
+            }
+
+            #spanDemoE2{
+                color:#0000ff
+            }
+
+            #divDemoE1{
+                color:#ff0000
+            }
+
+            #divDemoE2{
+                color:#0000ff
+            }
+
+            .chapterTitleABC{
+                color:#ffffff;
+                background-color:#ff8800;
+                font-family:Arial;
+                text-align: center;
+            }
+
+            .chapterTitle123{
+                color:#ffffff;
+                background-color:#ff0800;
+                font-family:Arial;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+
+    <body>
+
+
+        <!--HTML Document-->
+        <div>
+            <hr>
+            <h1 class="chapterTitle123">CHAPTER 1: DOCUMENT</h1>
+
+
+            <!--Document Type Declaration-->
+            <section>
+                <hr>
+                <h2>Document Type Declaration &lt;!DOCTYPE&gt;:</h2>
+                <p>
+                    What is probably the most essential part of an HTML program,
+                    the &lt;!DOCTYPE&gt; element must always be the first element inside an HTML file.
+                    This element tells the browser what type of document it should expect.
+                    It is also usually followed up by "html", meaning the document is using HTML5.
+                </p>
+                <h4>Sample:</h4>
+                <pre><code>
+&lt;!DOCTYPE html&gt;
+                </code></pre>
+            </section>
+
+
+            <!--HTML Root-->
+            <section>
+                <hr>
+                <h2>HTML Root &lt;html&gt;:</h2>
+                <p>
+                    The &lt;html&gt; element is the second most important element within an HTML program,
+                    as it must contain all other elements apart from &lt;!DOCTYPE&gt;. 
+                    The &lt;html&gt; element represents the root of an HTML document.
+                </p>
+                <h4>Sample:</h4>
+                <pre><code>
+&lt;html lang="en" dir="ltr"&gt;
+&lt;/html&gt;
+                </code></pre>
+                <p>
+                    The &lt;html&gt; element can also have a few attributes, 
+                    mainly used to help browsers identify the language and direction of the text within.
+                    These are the most important attributes:
+                </p>
+                <dl>
+                    <dt>"lang"</dt>
+                    <dd>- Tells browsers the language used within the page.</dd>
+                    <dt>"dir"</dt>
+                    <dd>- Tells browsers the direction of the text within the page.</dd>
+                </dl>
+            </section>
+
+
+            <!--Commenting-->
+            <section>
+                <hr>
+                <h2>Commenting &lt;!----&gt;:</h2>
+                <p>
+                    Commenting is an important feature within just about any programming language as it can be used to label and organize code. 
+                    Within HTML, a comment must be surrounded by "&lt;!--" and "--&gt;"". 
+                </p>
+                <h4>Sample:</h4>
+                <pre><code>
+&lt;!--This is what a comment would look like within a HTML document--&gt;
+                </code></pre>
+            </section>
+
+        </div>
+
+
+        <!--HTML Head-->
+        <div>
+            <hr>
+            <h1 class="chapterTitle123">CHAPTER 2: HEAD</h1>
+
+
+            <!--Head-->
+            <section>
+                <hr>
+                <h2>Head &lt;head&gt;:</h2>
+                <p>
+                    The &lt;head&gt; element is one of two main elements which contain all other elements excluding &lt;!DOCTYPE&gt; and &lt;html&gt;. 
+                    The &lt;head&gt; element contains all metadata, code that doesn't directly affect what is viewed on the webpage.
+                </p>
+                <h4>Sample:</h4>
+                <pre><code>
+&lt;head&gt;
+    &lt;title&gt;Webpage&lt;/title&gt;
+&lt;/head&gt;
+                </code></pre>
+            </section>
+
+
+            <!--Title-->
+            <section>
+                <hr>
+                <h2>Title &lt;title&gt;:</h2>
+                <p>
+                    The &lt;title&gt; element is used to define a title for the webpage.
+                    They are a necessary element within an HTML document, however there can only be one &lt;title&gt; element withing a file.
+                </p>
+                <h4>Sample:</h4>
+                <pre><code>
+&lt;title&gt;Insert Title Here&lt;/title&gt;
+                </code></pre>
+            </section>
+
+
+            <!--Link-->
+            <section>
+                <hr>
+                <h2>Link &lt;link&gt;:</h2>
+                <p>
+                    The &lt;link&gt; element is used to link to external rescources.
+                    The &lt;link&gt; element is completely empty, only using attributes.
+                </p>
+                <h4>Sample:</h4>
+                <pre><code>
+&lt;link rel="icon" type="image/png" href="D:\Coding Files\HTML Files\personalHTMLDemoIcon.png"&gt;
+                </code></pre>
+                <p>
+                    The &lt;link&gt; element has several different types of attributes, those being:
+                </p>
+                <dl>
+                    <dt>"crossorigin"</dt>
+                    <dd>
+                        - Used to protect information when loading items from different sources. 
+                        Crossorigin can have two possible values:
+                        <list>
+                            <li>- "anonymous" (Login info + cookies  are not sent/kept private)</li>
+                            <li>- "use-credentials" (Login info + cookies  are sent/not kept private)</li>
+                        </list>
+                    </dd>
+                    <dt>"href"</dt>
+                    <dd>- Provides a path/URL to the linked document.</dd>
+                    <dt>"hreflang"</dt>
+                    <dd>- Specifies the language of the text within linked document.</dd>
+                    <dt>"media"</dt>
+                    <dd>- Used to limit when something is loaded in/happens based on the CSS value inputted as it's value.</dd>
+                    <dt>"referrerpolicy"</dt>
+                    <dd>
+                        - Limits how much information the url within the link is allowed to recieve from the user.
+                        This is useful for security, performance, and compliance reasons.
+                        There are a couple different possible values for the attibute.
+                        They are:
+                        <list>
+                            <li>"no-referrer" (Sends NO referrer info at all.)</li>
+                            <li>"no-referrer-when-downgrade" (Sends full referrer info to HTTPS destinations(more secure than HTTP), but no info to HTTP destinations.)</li>
+                            <li>"origin" (Only tells the url what website they came from, excluding any other info.)</li>
+                            <li>"origin-when-cross-origin" (Sends full url if the link is on the same site, but only sends url if the link is on a different site.)</li>
+                            <li>"same-origin" (Only sends full referrer info if the link is on the same site, otherwise it sends nothing.)</li>
+                            <li>"strict-origin" (Sends the origin only to HTTPS sites only.)</li>
+                            <li>"unsafe-url" (Sends full url referrer to any destination, which is incredibly unsafe.)</li>
+                        </list>
+                    </dd>
+                    <dt>"rel"</dt>
+                    <dd>
+                        - Lets the browser know the relationship between the link and the site.
+                        Here are its possible values:
+                        <list>
+                            <li>"alternate" (Provides a link to an alternate version of the document, such as mirrored, translated, etc.)</li>
+                            <li>"author" (Provides a link to the author of the document.)</li>
+                            <li>"bookmark" (A url used for bookmarking.)</li>
+                            <li>"canonical" (Tells browsers this is the preferred version of the page.)</li>
+                            <li>"external" (The linked document is not on the same site.)</li>
+                            <li>"help" (Provides a link to a help document.)</li>
+                            <li>"icon" (An image used on the tab)</li>
+                            <li>"license" (Provides a link to the licensing information for the document.)</li>
+                            <li>"next" (Provides a link to the next document in the series.)</li>
+                            <li>"nofollow" (Used on links that send to an unendorsed document (similar to a paid link). Necessary on Google.)</li>
+                            <li>"noopener" (Prevents the newly opened page from being able to control or interact with the page that opened it. Very useful for preventing tabnabbing.)</li>
+                            <li>"noreferrer" (Makes the referrer unknown.)</li>
+                            <li>"prev" (Previous document in the series.)</li>
+                            <li>"search" (Links to a search tool used for the document.)</li>
+                            <li>"sponsored" (Paid or affiliate link.)</li>
+                            <li>"tag" (>A tag/keyword for the current document.)</li>
+                            <li>"ugc" (Link was posted by a user.)</li>
+                        </list>
+                    </dd>
+                    <dt>"type"</dt>
+                    <dd>- Used to specify the type of media of the linked document. Attribute value should be: media/type (ie. image/png)</dd>
+                </dl>
+            </section>
+
+
+            <!--Meta-->
+            <section>
+                <hr>
+                <h2>Meta &lt;meta&gt;:</h2>
+                <p>
+                    The &lt;meta&gt; element is used to define metadata of the page.
+                    This includes, keywords, author, and other important information.
+                </p>
+                <h4>Sample:</h4>
+                <pre><code>
+&lt;meta name="author" content="Rebytre"&gt;
+                </code></pre>
+                <p>
+                    The &lt;meta&gt; element has several important attributes, being:
+                    <dl>
+                        <dt>"charset"</dt>
+                        <dd>- Lets the website know what character set to use. The standard as of now is UTF-8, due to its wide range of available characters.</dd>
+                        <dt>"content"</dt>
+                        <dd>- Usually accompanies the "name" attribute, literally the content of the "name"/"https-equiv" attribute. Value is any text.</dd>
+                        <dt>"http-equiv"</dt>
+                        <dd>
+                            - Allows the website to tell the browser to behave in a certain way,
+                            even if the server didn't send an instruction like that.
+                            It acts as a fake http header. Here are it's possible values:
+                            <list>
+                                <li>"refresh" (Reloads the page after a certain amount of time/can also reload. Content must be added containing amount of seconds and/or redirect page.)</li>
+                                <li>"default-style" (Chooses style of CSS, which means it can swap between light, dark, etc.)</li>
+                                <li>"cache-control" (Allows the browser to control how cache is saved., however this is secondary to real HTTP headers) </li>
+                            </list>
+                        </dd>
+                        <dt>"name"</dt>
+                        <dd>
+                            - Used in specifying a name for the metadata being shared.
+                            Possible values are:
+                            <list>
+                                <li>"author" (Specifies the author of the website.)</li>
+                                <li>"description" (Short description of the website)</li>
+                                <li>"generator" (Specifies what tool was used to make the page ie. VS Code)</li>
+                                <li>"keywords" (Keywords for the website, not used much anymore.)</li>
+                                <li>"viewport" (Tells the browser how the page scales on mobile devices)</li>
+                                <li>"robots" (Useful if you have private/duplicate content, tells browsers not to save/show/archive certain websites)</li>
+                            </list>
+                        </dd>
+                        <dt>"property"</dt>
+                        <dd>
+                            The property attribute lets you change how users see the preview of your website.
+                            However, it is also used when adding custom metadata, but here are the standard values:
+                            <list>
+                                <li>"og:title" (Title of the page)</li>
+                                <li>"og:description" (Short description of the page)</li>
+                                <li>"og:image" (Preview image)</li>
+                                <li>"og:url" (Canonical URL of the webpage)</li>
+                                <li>"og:type" (Content type ie. website, article, pdf, etc.)</li>
+                                <li>"og:site_name" (Name of the overall site)</li>
+                            </list>
+                        </dd>
+                    </dl>
+                </p>
+            </section>
+
+
+            <!--Style-->
+            <section>
+                <hr>
+                <h2>Style &lt;style&gt;:</h2>
+                <p>
+                    The &lt;style&gt; element is used for adding small style sheets to pages without the use of external files.
+                    This element usually gets overshadowed by external CSS files, however it is still useful for smaller websites or testing without the need to manage files.
+                </p>
+                <h4>Sample:</h4>
+                <pre><code>
+&lt;style&gt;
+    #spanDemoE1{
+        color:#ff0000
+    }
+
+    #spanDemoE2{
+        color:#0000ff
+    }
+&lt;/style&gt;
+                </code></pre>
+            </section>
+
+
+            <!--Script-->
+            <section>
+                <hr>
+                <h2>Script &lt;script&gt;:</h2>
+                <p>
+                    The &lt;script&gt; element is used to add Javascript to a program.
+                    It is recommended to put it inside the &lt;head&gt; container as it keps the code more organized and it is the best option for modern websites.     
+                </p>
+                <h4>Sample:</h4>
+                <pre><code>
+&lt;script src="#" defer&gt;&lt;/script&gt;
+                </code></pre>
+                <p>
+                    These are the attributes that &lt;script&gt; can contain while inside a &lt;script&gt; container (async/defer are necessary for optimization):
+                    <list>
+                        <li>"src" (Used to point to an external Javascript file.)</li>
+                        <li>"type" (Defines the scripting language, ie. text/language ((literally "text")))</li>
+                        <li>"async" (Loads the script without blocking the rendering of the website, may cause problems.)</li>
+                        <li>"defer" (Blocks the rendering of the website until the JS file downloads, may cause delay)</li>
+                    </list>
+                </p>
+            </section>
+            
+
+            <!--No Script-->
+            <section>
+                <hr>
+                <h2>No Script &lt;noscript&gt;:</h2>
+                <p>
+                    The &lt;noscript&gt; element is used as a fallback in case Javascript is disabled/not supported in the browser.
+                    Any text within the element is displayed if Javascript is not available.
+                </p>
+                <h4>Sample:</h4>
+                <pre><code>
+&lt;noscript&gt;
+    <p>Your browser does not support JS.</p>
+&lt;/noscript&gt;
+                </code></pre>
+            </section>
+        </div>
+
+
+        <!--HTML Body-->
+        <div>
+            <hr>
+            <h1 class="chapterTitle123">CHAPTER 3: BODY</h1>
+
+        
+            <!--PART A: Content Structure-->
+            <div>
+                <hr>
+                <h1 class="chapterTitleABC">PART A: CONTENT STRUCTURE   NEEDS RESTRUCTURING !!!!!!!!!!!!</h1>
+
+
+                <!--Navigation Menus-->
+                <section>
+                    <hr>
+                    <h2>Navigation Menus &lt;nav&gt;:</h2>
+                    <p>
+                        The function &lt;nav&gt; specifies to the browser on what links are used for navigation in the site. 
+                        The &lt;nav&gt; element only contains links that act as navigation for the site.
+                        Its main goal is to assist with accessibility and helping search engines understand how the website is structured.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+                    </code></pre>
+                    <p>
+                        This element does not produce a visible product/change,
+                        so no outcome will be included.
+                    </p>
+                </section>
+
+
+                <!--Header-->
+                <section>
+                    <hr>
+                    <h2>Headers &lt;header&gt;:</h2>
+                    <p>
+                        The &lt;header&gt; element usually contains all introductory content or navigational links.
+                        This can mean images, text, links, and author information.
+                        You cannot add a &lt;header&gt; element into a &lt;address&gt;, &lt;footer&gt;, or another &lt;header&gt; element.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;header&gt;
+    &lt;h1&gt;Title&lt;/h1&gt;
+    &lt;address&gt;
+        John Doe
+        2025
+        Address
+    &lt;/address&gt;
+&lt;/header&gt;
+                    </code></pre>
+                    <p>
+                        This element does not produce a visible product/change,
+                        so no outcome will be included.
+                    </p>
+                </section>
+
+
+                <!--Main-->
+                <section>
+                    <hr>
+                    <h2>Main Content &lt;main&gt;:</h2>
+                    <p>
+                        The &lt;main&gt; element usually contains all of the main content of a webpage.
+                        There should only be one &lt;main&gt; element per page.
+                        It also shouldn't be within a &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;header&gt;, or &lt;nav&gt; element.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;main&gt;
+    &lt;p&gt;
+    This is a paragraph.
+    &lt;/p&gt;
+    &lt;p&gt;
+    This is another paragraph.
+    &lt;/p&gt;
+&lt;/main&gt;
+                    </code></pre>
+                    <p>
+                        This element does not produce a visible product/change,
+                        so no outcome will be included.
+                    </p>
+                </section>
+
+
+                <!--Section-->
+                <section>
+                    <hr>
+                    <h2>Section &lt;section&gt;:</h2>
+                    <p>
+                        The &lt;section&gt; element signifies a section inside a document.
+                        The main difference between &lt;section&gt; and &lt;div&gt; is that &lt;section&gt; can be viewed by browsers,
+                        as in they will recognize that whatever is inside of &lt;section&gt; is a standalone section,
+                        while &lt;div&gt; often isn't recognized by browsers,
+                        meaning anything within it isn't treated differently (excluding attributes and such).
+                    </p>
+                    <pre><code>
+&lt;section&gt;
+    &lt;h1&gt;Title&lt;/h1&gt;
+    &lt;p&gt;Paragraph 1&lt;/p&gt;
+&lt;/section&gt;
+                    </code></pre>
+                    <p>
+                        This element does not produce a visible product/change,
+                        so no outcome will be included.
+                    </p>
+                </section>
+
+
+                <!--Article-->
+                <section>
+                    <hr>
+                    <h2>Article &lt;article&gt;:</h2>
+                    <p>
+                        The &lt;article&gt; element is similar to &lt;section&gt;,
+                        however it instead features content that can stand alone independently.
+                        The element can feature content such as blog posts, user comments, or magazine articles.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;article&gt;
+    &lt;h1&gt;Title&lt;/h1&gt;
+    &lt;p&gt;Standalone Paragraph&lt;/p&gt;
+&lt;/article&gt;
+                    </code></pre>
+                    <p>
+                        This element does not produce a visible product/change,
+                        so no outcome will be included.
+                    </p>
+                </section>
+
+                <!--Aside-->
+                <section>
+                    <hr>
+                    <h2>Aside &lt;aside&gt;:</h2>
+                    <p>
+                        The &lt;aside&gt; element is used for containing additional information.
+                        &lt;aside&gt; can have several uses, such as author bios, related links/articles, notes, sidebars, and tips.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;aside&gt;
+    &lt;p&gt;
+        You might also like:
+    &lt;/p&gt;
+    &lt;a href="#"&gt;Link&lt;/a&gt;
+&lt;/aside&gt;
+                    </code></pre>
+                    <p>
+                        This element does not produce a visible product/change,
+                        so no outcome will be included.
+                    </p>
+                </section>
+
+
+                <!--Footer-->
+                <section>
+                    <hr>
+                    <h2>Footer &lt;footer&gt;:</h2>
+                    <p>
+                        The &lt;footer&gt; element is found at the bottom of a section/page. 
+                        It typically includes information about the author, copyright rules, contact info, and related links.
+                        Any contact info inside the &lt;footer&gt; is typically put into an &lt;address&gt; element.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;footer&gt;
+    &lt;p&gt;
+        Copyright info here:
+    &lt;/p&gt;
+    &lt;address&gt;
+        Written by: Rebytre
+        rebytre101@gmail.com
+    &lt;/address&gt;
+&lt;/footer&gt;
+                    </code></pre>
+                    <p>
+                        This element does not produce a visible product/change,
+                        so no outcome will be included.
+                    </p>
+                </section>
+
+
+                <!--Span-->
+                <section>
+                    <hr>
+                    <h2>Span &lt;span&gt;:</h2>
+                    <p>
+                        The &lt;span&gt; element acts as a group, with anything inside of it being a part of that group.
+                        It is useful for affecting multiple elements at once.
+                        Unlike &lt;div&gt;, &lt;span&gt; is an inline element,
+                        meaning it doesn't create new indentations around it.
+                        This is useful for applying styles to certain sections of text without creating unnecessary indentation.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;p&gt;
+    This word is span id="spanDemoE1"&gt;Red&lt;/span&gt;. 
+    This word is span&gt; id="spanDemoE2"&gt;Blue&lt;/span&gt;. 
+&lt;/p&gt;
+                    </code></pre>
+                    <h4>Outcome:</h4>
+                    <p>
+                        This word is <span id="spanDemoE1">Red</span>.<br>
+                        This word is <span id="spanDemoE2">Blue</span>.
+                    </p>
+                </section>
+
+
+                <!--Div-->
+                <section>
+                    <hr>
+                    <h2>Divides &lt;div&gt;:</h2>
+                    <p>
+                        The &lt;div&gt; element acts as a group, with anything inside of it being apart of that group.
+                        It is useful for affecting multiple elements at once.
+                        Unlike &lt;span&gt;, &lt;div&gt; is a block-level element,
+                        meaning it creates indentations before and after itself.
+                        This is usually used for dividing code into multiple easier-to-manage sections.
+                        Make sure not to add &lt;div&gt; elements into inline elements (ie. &lt;a&gt;, &lt;span&gt;, etc.)
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+
+&lt;div id="divDemoE1"&gt;&lt;p&gt;This text is blue. &lt;/p&gt;&lt;/div&gt;
+&lt;div id="divDemoE2"&gt;&lt;p&gt;This text is red. &lt;/p&gt;&lt;/div&gt;
+
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>NOTE: Indentation on top</p>
+                    <div id="divDemoE1"><p>This text is red.</p></div>
+                    <div id="divDemoE2"><p>This text is blue.</p></div>
+                    <p>NOTE: Will also be indented below</p>
+                </section>
+
+            
+            </div>
+
+
+            <!--PART B: Text Content-->
+            <div>
+                <hr>
+                <h1 class="chapterTitleABC">PART B: TEXT CONTENT   NEEDS TO BE RESTRUCTURED!!!!!!</h1>
+
+
+                <!--Headings-->
+                <section>
+                    <hr>
+                    <h2>Headings &lt;h𝔁&gt;:</h2>
+                    <p>
+                        Probably the most basic of all HTML elements, 
+                        the &lt;h𝔁&gt; function produces a heading. Depending on the number "𝔁" is (Must be between 1 and 6), 
+                        it produces a header. The lower "𝔁" is as a number, the bigger the heading. 
+                        Below are examples of each header size, descending from greatest to smallest:
+                    </p><br>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;h1&gt;Heading No.1 &lt;/h1&gt;
+&lt;h2&gt;Heading No.2 &lt;/h2&gt;
+&lt;h3&gt;Heading No.3 &lt;/h3&gt;
+&lt;h4&gt;Heading No.4 &lt;/h4&gt;
+&lt;h5&gt;Heading No.5 &lt;/h5&gt;
+&lt;h6&gt;Heading No.6 &lt;/h6&gt;
+                    </code></pre><h4>Output:</h4>
+                    <h1>Heading No.1 &lt;h1&gt;</h1>
+                    <h2>Heading No.2 &lt;h2&gt;</h2>
+                    <h3>Heading No.3 &lt;h3&gt;</h3>
+                    <h4>Heading No.4 &lt;h4&gt;</h4>
+                    <h5>Heading No.5 &lt;h5&gt;</h5>
+                    <h6>Heading No.6 &lt;h6&gt;</h6>
+                </section>
+
+
+                <!--Paragraph-->
+                <section>
+                    <hr>
+                    <h2>Paragraphs &lt;p&gt;</h2>
+                    <p>
+                        The &lt;p&gt; element is the main way of printing out text. 
+                        It doesn't follow spacing within the code, unlike &lt;pre&gt;. 
+                        This paragraph is an example of &lt;p&gt;. 
+                    </p><br>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;p&gt;
+    The &lt;p&gt; element is the main way of printing out text. 
+    It doesn't follow spacing within the code, unlike &lt;pre&gt;. 
+    This block of text also happens to be the element &lt;p&gt;. 
+&lt;/p&gt;
+                    </code></pre>
+                    <p>Outcome can be found above the code.</p>
+                </div>
+
+
+                <!--Line Breaks-->
+                <div>
+                    <hr>
+                    <h2>Line Breaks &lt;br&gt;:</h2>
+                    <p>
+                        The element &lt;br&gt; can be put almost anywhere and creates a line break in the program.
+                        It doesn't have a closing tag.
+                        It functions similarly to \n (newline) in other languages, such as Python.
+                    </p><br>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;p&gt;
+    This paragraph will be&lt;br&gt;&lt;br&gt; split in half.
+&lt;/p&gt;
+                    </code></pre>
+                    <h4>Outcome:</h4>
+                    <p>
+                        This paragraph will be<br><br> split in half.
+                    </p>
+                </section>
+
+
+                <!--Horizontal Rule-->
+                <section>
+                    <hr>
+                    <h2>Horizontal Rule &lt;hr&gt;:</h2>
+                    <p>
+                        The &lt;hr&gt; element creates a horizontal line across the page to indicate a new part of the website.
+                        It has no end block.
+                    </p><br>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+                    </code></pre>
+                    <h4>Outcome:</h4>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <br><br>
+                </section>
+
+
+                <!--Blockquote-->
+                <section>
+                    <hr>
+                    <h2>Blockquote &lt;blockquote&gt;:</h2>
+                    <p>
+                        The &lt;blockquote&gt; element is used to indicate that a section of text is quoted from an external source. 
+                        It must include a "cite" attribute, followed by a link to the source the text is quoted from.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;blockquote cite="www.google.com"&gt;
+    This text is from a different source.
+&lt;/blockquote&gt; 
+                    </code></pre>
+                    <blockquote cite="www.google.com">
+                        This text is from a different source.
+                    </blockquote>
+                </section>
+
+
+                <!--Code-->
+                <section>
+                    <hr>
+                    <h2>Code &lt;code&gt;:</h2>
+                    <p>
+                        The &lt;code&gt; element is used to define whatever text is inside the element as being computer code. 
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;p&gt;The &lt;code&gt;code&lt;/code&gt; element is used to define code.&lt;/p&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>The <code>code</code> element is used to define code.</p>
+                </section>
+
+
+                <!--Preformatted Text-->
+                <section>
+                    <hr>
+                    <h2>Preformatted Text &lt;pre&gt;:</h2>
+                    <p>
+                        The &lt;pre&gt; element is used to write pre-formatted text within a page.
+                        It renders any text within with all spacing/formatting and in a different text style (slightly different than regular text).
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;pre&gt;Test      te  xt.&lt;/pre&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <pre>Test      te  xt.</pre>
+                </section>
+
+
+            </div>
+
+
+            <!--PART C: Lists-->
+            <div>
+                <hr>
+                <h1 class="chapterTitleABC">PART C: LISTS</h1>
+
+
+                <!--Unordered Lists-->
+                <section>
+                    <hr>
+                    <h2>Unordered Lists &lt;ul&gt;</h2>
+                    <p>
+                        The element &lt;ul&gt; creates an unordered list,
+                        meaning it isn't numbered.
+                        As with all lists, they can be nested into each other.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </section>
+
+
+                <!--Ordered Lists-->
+                <section>
+                    <hr>
+                    <h2>Ordered Lists &lt;ol&gt;:</h2>
+                    <p>
+                        The element &lt;ol&gt; creates an organized list,
+                        meaning it is numbered.
+                        As with all lists, they can be nested into each other.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                    <br><br>
+                    <h4>Ordered Lists - Attributes</h4>
+                    <p>
+                        Unlike other types of lists,
+                        ordered lists have 3 special attributes that can be applied to them.
+                        The first being the "start" attribute.
+                        The start attribute can change what number the list starts from.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;ol start="2"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                    </code></pre>
+                    <ol start="2">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                    <p>
+                        The second attribute is "reversed". 
+                        This attribute is added directly after starting an ordered list.
+                        If applied, all items are counted in reverse order.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;ol reversed&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                    </code></pre>
+                    <ol reversed>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                    <p>
+                        The third attribute is the "type" attribute.
+                        This attribute can change how list item markers are shown.
+                        It can change it to numerical digits, alphabetical letters (uncapitalized), alphabetical letters (capitalized), roman numerals (uncapitalized), and roman numerals (capitalized).
+                    </p>
+                    <h4>Sample:</h4>
+                    <h5>Numerical Digits / "1" (Default)</h5>
+                    <pre><code>
+&lt;ol type="1"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <ol type = "1">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                    <h5>Alphabetical Letters (Lowercase) / "a"</h5>
+                    <pre><code>
+&lt;ol type="a"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <ol type = "a">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                    <h5>Alphabetical Letters (Uppercase) / "A"</h5>
+                    <pre><code>
+&lt;ol type="A"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <ol type = "A">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                    <h5>Roman Numerals (Lowercase) / "i"</h5>
+                    <pre><code>
+&lt;ol type="i"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <ol type = "i">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                    <h5>Roman Numerals (Uppercase) / "I"</h5>
+                    <pre><code>
+&lt;ol type="I"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <ol type = "I">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </section>
+
+
+                <!--List Items-->
+                <section>
+                    <hr>
+                    <h2>List Items &lt;li&gt;:</h2>
+                    <p>
+                        The element &lt;li&gt; is used in creating items on a list.
+                        It is placed within a larger list element, such as &lt;ul&gt; or &lt;ol&gt;.
+                        It cannot be added into a &lt;dl&gt; list.
+                        Anything within &lt;li&gt; is made into an item on a list.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </section>
+
+
+                <!--Description List-->
+                <section>
+                    <hr>
+                    <h2>Description List &lt;dl&gt;:</h2>
+                    <p>
+                        The element &lt;dl&gt; creates a list where each item has a description.
+                        None of the previous elements related to lists work in a &lt;dl&gt; list.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;dl&gt;
+    &lt;dt&gt;Item 1&lt;/dt&gt;
+    &lt;dd&gt;Description 1&lt;/dd&gt;
+    &lt;dt&gt;Item 2&lt;/dt&gt;
+    &lt;dd&gt;Description 2&lt;/dd&gt;
+    &lt;dt&gt;Item 3&lt;/dt&gt;
+    &lt;dd&gt;Description 3&lt;/dd&gt;
+&lt;/dl&gt;
+                    </code></pre>
+                    <h4>Outcome:</h4>
+                    <dl>
+                        <dt>Item 1</dt>
+                        <dd>Description 1</dd>
+                        <dt>Item 2</dt>
+                        <dd>Description 2</dd>
+                        <dt>Item 3</dt>
+                        <dd>Description 3</dd>
+                    </dl>
+                </section>
+
+
+                <!--Description List Term-->
+                <section>
+                    <hr>
+                    <h2>Description Term &lt;dt&gt;:</h2>
+                    <p>
+                        The element &lt;dt&gt; is similar to the element &lt;li&gt;,
+                        except specifically for a description list.
+                        However, &lt;dt&gt; acts more as a label rather than an item.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;dl&gt;
+    &lt;dt&gt;Item 1&lt;/dt&gt;
+    &lt;dd&gt;Description 1&lt;/dd&gt;
+    &lt;dt&gt;Item 2&lt;/dt&gt;
+    &lt;dd&gt;Description 2&lt;/dd&gt;
+    &lt;dt&gt;Item 3&lt;/dt&gt;
+    &lt;dd&gt;Description 3&lt;/dd&gt;
+&lt;/dl&gt;
+                    </code></pre>
+                    <h4>Outcome:</h4>
+                    <dl>
+                        <dt>Item 1</dt>
+                        <dd>Description 1</dd>
+                        <dt>Item 2</dt>
+                        <dd>Description 2</dd>
+                        <dt>Item 3</dt>
+                        <dd>Description 3</dd>
+                    </dl>
+                </section>
+
+
+                <!--Description List Details-->
+                <section>
+                    <hr>
+                    <h2>Description Term Details &lt;dd&gt;</h2>
+                    <p>
+                        The element &lt;dd&gt; creates a description in the list.
+                        It is commonly used under a &lt;dt&gt; element.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;dl&gt;
+    &lt;dt&gt;Item 1&lt;/dt&gt;
+    &lt;dd&gt;Description 1&lt;/dd&gt;
+    &lt;dt&gt;Item 2&lt;/dt&gt;
+    &lt;dd&gt;Description 2&lt;/dd&gt;
+    &lt;dt&gt;Item 3&lt;/dt&gt;
+    &lt;dd&gt;Description 3&lt;/dd&gt;
+&lt;/dl&gt;
+                    </code></pre>
+                    <h4>Outcome:</h4>
+                    <dl>
+                        <dt>Item 1</dt>
+                        <dd>Description 1</dd>
+                        <dt>Item 2</dt>
+                        <dd>Description 2</dd>
+                        <dt>Item 3</dt>
+                        <dd>Description 3</dd>
+                    </dl>
+                </section>
+
+
+            </div>
+
+
+            <!--PART D: Media-->
+            <div>
+                <hr>
+                <h1 class="chapterTitleABC">PART D: MEDIA</h1>
+
+
+                <!--Image-->
+                <section>
+                    <hr>
+                    <h2>Image &lt;img&gt;:</h2>
+                    <p>
+                        The &lt;img&gt; element creates a holding space for an image to be inserted.
+                        The &lt;img&gt; has no end tag.
+                        The &lt;img&gt; has 2 necessary attributes, those being "src" and "alt". 
+                        The attributes "width" and "height" should also be specified to help save rescources.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;img alt = "HTML5" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" width = "200px" height = "200px"&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <img alt = "HTML5" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" width = "200px" height = "200px">
+                    <br><br>
+                    <h3>Image Attributes:</h3>
+                    <dl>
+                        <dt>"alt"</dt>
+                        <dd>- This attribute adds text to an image that displays instead of the image if the image fails to load due to a faulty link or poor connection. Its value should be the text you want displayed.</dd>
+                        <dt>"src"</dt>
+                        <dd>- This attribute tells the program the file path/link to find the image that needs to be inserted.</dd>
+                        <dt>"height"</dt>
+                        <dd>- Specifies what the height of the image should be in pixels.</dd>
+                        <dt>"width"</dt>
+                        <dd>- Specifies what the length of the image should be in pixels.</dd>
+                        <dt>"loading"</dt>
+                        <dd>
+                            Lets the browser know when to load the image. This is useful for managing rescources and controlling lag.
+                            Here is a list of possible values:
+                            <list>
+                                <li>"auto" (Lets the browser decide by itself)</li>
+                                <li>"eager" (Loads the image right away)</li>
+                                <li>"lazy" (Avoids loading the image until it is within the viewport)</li>
+                            </list>
+                        </dd>
+                        <dt>"decoding"</dt>
+                        <dd>
+                            Lets the browser know how to decode the image. Useful for avoiding higher rendering times.
+                            Here is a list of possible values:
+                            <list>
+                                <li>"auto" (Lets the browser choose)</li>
+                                <li>"async" (Decodes the image in the background. Great for avoiding page render)</li>
+                                <li>"sync" (Decodes the image immediately, increasing rendering time. Only used when necessary)</li>
+                            </list>
+                        </dd>
+                        <dt>"crossorigin"</dt>
+                        <dd>
+                            - Used to protect information when loading items from different sources. 
+                            Crossorigin can have two possible values:
+                            <list>
+                                <li>- "anonymous" (Login info + cookies  are not sent/kept private)</li>
+                                <li>- "use-credentials" (Login info + cookies  are sent/not kept private)</li>
+                            </list>
+                        </dd>
+                        <dt>"referrerpolicy"</dt>
+                        <dd>
+                            - Limits how much information the url within the link is allowed to recieve from the user.
+                            This is useful for security, performance, and compliance reasons.
+                            There are a couple different possible values for the attibute.
+                            They are:
+                            <list>
+                                <li>"no-referrer" (Sends NO referrer info at all.)</li>
+                                <li>"no-referrer-when-downgrade" (Sends full referrer info to HTTPS destinations(more secure than HTTP), but no info to HTTP destinations.)</li>
+                                <li>"origin" (Only tells the url what website they came from, excluding any other info.)</li>
+                                <li>"origin-when-cross-origin" (Sends full url if the link is on the same site, but only sends url if the link is on a different site.)</li>
+                                <li>"same-origin" (Only sends full referrer info if the link is on the same site, otherwise it sends nothing.)</li>
+                                <li>"strict-origin" (Sends the origin only to HTTPS sites only.)</li>
+                                <li>"unsafe-url" (Sends full url referrer to any destination, which is incredibly unsafe.)</li>
+                            </list>
+                        </dd>
+                    </dl>
+                </section>
+
+
+                <!--Source-->
+                <section>
+                    <hr>
+                    <h2>Source &lt;source&gt;:</h2>
+                    <p>
+                        The &lt;source&gt; element is used to specify multiple media rescources for any type of media.
+                        By combining CSS tags, you can change the media being displayed based on the viewport.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;source srcset="image.svg" media="#" type="image/svg"&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>By itself, &lt;source&gt; does not produce a visible result, and as such no output will be shown. See below for an example involving &lt;source&gt;.</p>
+                    <p>
+                        The &lt;source&gt; always must have attributes. Here is a list of them:
+                        <dl>
+                            <dt>"media"</dt>
+                            <dd>- Used to specify viewport limitations. Attribute value is in the CSS language.</dd>
+                            <dt>"src"</dt>
+                            <dd>- Used only if &lt;source&gt; is inside of &lt;video&gt; or &lt;audio&gt;. Specifies the source of the image (URL/Path).</dd>
+                            <dt>"srcset"</dt>
+                            <dd>- Used only if &lt;source&gt; is inside of &lt;source&gt;. Specifies the source of the image (URL/Path).</dd>
+                            <dt>"type"</dt>
+                            <dd>- Used to define the type of media within the source element (ie. media/type, image/png).</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Pictures-->
+                <section>
+                    <hr>
+                    <h2>Pictures &lt;picture&gt;:</h2>
+                    <p>
+                        The &lt;picture&gt; element is essentially a more adaptable version of &lt;img&gt;,
+                        being able to render different images (or different variants of the same image) depending on the viewport size.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;picture&gt;
+    &lt;source srcset="image.svg" media="#" type="image/svg"&gt;
+    &lt;source srcset="image.png" media="#" type="image/png"&gt;
+    &lt;img alt="Nature Photo" src="test img"&gt;
+&lt;/picture&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <picture>
+                        <source srcset="https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740" type="image/avif">
+                        <source srcset="https://t4.ftcdn.net/jpg/02/56/10/07/360_F_256100731_qNLp6MQ3FjYtA3Freu9epjhsAj2cwU9c.jpg" type="image/jpg">
+                        <img alt="Nature Photo" src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg">
+                    </picture>
+                </section>
+
+
+                <!--Audio-->
+                <section>
+                    <hr>
+                    <h2>Audio &lt;audio&gt;:</h2>
+                    <p>
+                        The &lt;audio&gt; element is used to add audio content into a document.
+                        &lt;source&gt; elements are used inside of &lt;audio&gt;, 
+                        however text may also be added after as a fallback measure in case the audio files don't work.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;audio&gt;
+    &lt;source src="###.mp3" type="audio/mp3"&gt;
+    &lt;source src="###.mp3" type="audio/mp3"&gt;
+    Audio failed.
+&lt;/audio&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <audio autoplay controls preload="auto">
+                        <source src="D:\Coding Files\HTML Files\audioDemo1.mp3" type="audio/mp3">
+                        <source src="D:\Coding Files\HTML Files\audioDemo2.mp3" type="audio/mp3">
+                        Audio failed.
+                    </audio>
+                    <p>
+                        The &lt;audio&gt; element also includes a few attributes that can be used to alter how the audio file is played.
+                        They are:
+                        <dl>
+                            <dt>"autoplay"</dt>
+                            <dd>- Inserted into &lt;audio&gt;, it tells the browser to play the audio file immediately. Only functions if audio file is muted/site is trusted on modern browsers due to privacy reasons.</dd>
+                            <dt>"controls"</dt>
+                            <dd>- Highly suggested, tells the browser to display controls, such as a volume slides, pause button, etc.</dd>
+                            <dt>"loop"</dt>
+                            <dd>- Tells the browser to loop the audio file.</dd>
+                            <dt>"muted"</dt>
+                            <dd>- Tells the browser that the audio file should be muted.</dd>
+                            <dt>"preload"</dt>
+                            <dd>
+                                Tells the browser when to load the audio file. Possible values for this attribute are:
+                                <list>
+                                    <li>"auto" (Automatically loads the entirety of the audio file. Only use this if the audio file is absolutely necessary.)</li>
+                                    <li>"metadata" (Only loads the metadata of the audio file. This is good for limiting rescources used on a website.)</li>
+                                    <li>"none" (The audio file does not load at all, including the metadata.)</li>
+                                </list>
+                            </dd>
+                            <dt>"src"</dt>
+                            <dd>Identifies the path to the audio file.</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Video-->
+                <section>
+                    <hr>
+                    <h2>Video &lt;video&gt;:</h2>
+                    <p>
+                        The &lt;video&gt; is used to embed a video into a page.
+                        &lt;video&gt; typically includes one or more &lt;video&gt; elements along with text as an error message.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;video&gt;
+    &lt;source src="###.mp4"&gt;
+    &lt;source src="###.mp4"&gt;
+    Video failed.
+&lt;/video&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <video controls height="200" width="320">
+                        <source src="D:\Coding Files\HTML Files\videoDemo1.mp4" type="video/mp4">
+                        <source src="D:\Coding Files\HTML Files\videoDemo2.mp4" type="video/mp4">
+                        Video failed.
+                    </video>
+                    <p>
+                        The &lt;video&gt; element also has a few attributes that can be used to alter how the element functions.
+                        They are:
+                        <dl>
+                            <dt>"autoplay"</dt>
+                            <dd>- Inserted into &lt;audio&gt;, it tells the browser to play the audio file immediately. Only functions if audio file is muted/site is trusted on modern browsers due to privacy reasons.</dd>
+                            <dt>"controls"</dt>
+                            <dd>- Highly suggested, tells the browser to display controls, such as a volume slides, pause button, etc.</dd>
+                            <dt>"height"</dt>
+                            <dd>- Specifies how tall the video should be on the page</dd>
+                            <dt>"loop"</dt>
+                            <dd>- Tells the browser to loop the audio file.</dd>
+                            <dt>"muted"</dt>
+                            <dd>- Tells the browser that the audio file should be muted.</dd>
+                            <dt>"poster"</dt>
+                            <dd>- Specifies an image to be shown until the video loads/user presses the play button. Similar to a thumbnail.</dd>
+                            <dt>"preload"</dt>
+                            <dd>
+                                Tells the browser when to load the audio file. Possible values for this attribute are:
+                                <list>
+                                    <li>"auto" (Automatically loads the entirety of the audio file. Only use this if the audio file is absolutely necessary.)</li>
+                                    <li>"metadata" (Only loads the metadata of the audio file. This is good for limiting rescources used on a website.)</li>
+                                    <li>"none" (The audio file does not load at all, including the metadata.)</li>
+                                </list>
+                            </dd>
+                            <dt>"src"</dt>
+                            <dd>Identifies the path to the audio file.</dd>
+                            <dt>"width"</dt>
+                            <dd>- Specifies how wide the video should be on the page.</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Figure Caption-->
+                <section>
+                    <hr>
+                    <h2>Figure Caption &lt;figcaption&gt;:</h2>
+                    <p>
+                        The &lt;figcaption&gt; element defines a caption for any piece of media within a &lt;figure&gt; element.
+                        It absolutely must be used inside a &lt;figure&gt; element.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;figure&gt;
+    &lt;img src="#" type="image/jpg"&gt;
+    &lt;figcaption&gt;The photo above is really cool.&lt;/figcaption&gt;
+&lt;/figure&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>This element must be used within another to work. See next section for an example.</p>
+                </section>
+
+
+                <!--Figure-->
+                <section>
+                    <hr>
+                    <h2>Figure &lt;figure&gt;:</h2>
+                    <p>
+                        The &lt;figure&gt; element is used to define media with a caption. 
+                        A &lt;figcaption&gt; element must be present to function properly.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code></code></pre>
+&lt;figure&gt;
+    &lt;img src="#" type="image/jpg"&gt;
+    &lt;figcaption&gt;The photo above is really cool.&lt;/figcaption&gt;
+&lt;/figure&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <figure>
+                        <img src="https://www.beautyofplanet.com/wp-content/uploads/2021/12/a1-50.jpg" type="image/jpg">
+                        <figcaption>The photo above is really cool.</figcaption>
+                    </figure>
+                </section>
+
+
+            </div>
+
+
+            <!--PART E: Links & Navigation-->
+            <div>
+                <hr>
+                <h1 class="chapterTitleABC">PART E: LINKS & NAVIGATION</h1>
+
+
+                <!--Link-->
+                <section>
+                    <hr>
+                    <h2>Link &lt;a&gt;:</h2>
+                    <p>
+                        The &lt;a&gt; element defines a hyperlink,
+                        which is used to link one page to another.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;a href="https://www.w3schools.com/tags/tag_a.asp"&gt; Element&lt;/a&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <a href="https://www.w3schools.com/tags/tag_a.asp">&lt;a&gt; Element</a>
+                    <br><br>
+                    <h3>Links - Attributes:</h3>
+                    <p>
+                        Links have a total of nine different attributes that can be added onto them.
+                        This excludes the "style" attribute that can be applied onto just about every element.
+                    </p>
+                    <h4>"download"</h4>
+                    <p>
+                        The "download" attribute specifies to the browser to download the target rather than attempting to open it.
+                        It can be found in two forms.
+                        The first form is an empty attribute, telling the browser to download the item.
+                        The second form instead has a string value, 
+                        telling the browser to download it with a custom name (the string inside "download")
+                    </p>
+                    <h5>Sample:</h5>
+                    <pre><code>
+&lt;a href="###.pdf" download&gt;Download&lt;/a&gt;
+                    </code></pre>
+                    <p>
+                        or:
+                    </p>
+                    <pre><code>
+&lt;a href="###.pdf" download="Custom_File"&gt;Download&lt;/a&gt;
+                    </code></pre>
+                    <br>
+                    <h4>"href"</h4>
+                    <p>
+                        The "href" attribute is the only necessary attribute of the &lt;a&gt; element.
+                        The "href" attribute specifies the url/path that the link should go to.
+                        You can also use href="#top" or href="#" to link to the top of the current page.
+                    </p>
+                    <h5>Sample:</h5>
+                    <pre><code>
+&lt;a href="url/path"&gt;Link&lt;/a&gt;
+                    </code></pre>
+                    <br>
+                    <h4>"hreflang"</h4>
+                    <p>
+                        The "hreflang" attribute specifies the language of the page the href url links to.
+                        It is only used if the href attribute is set.
+                    </p>
+                    <h5>Sample:</h5>
+                    <pre><code>
+&lt;a href="#" hreflang="language abrreviation"&gt;Link&lt;/a&gt;
+                    </code></pre>
+                    <br>
+                    <h4>"media"</h4>
+                    <p>
+                        The "media" attribute is used to tell the browser different visual aspects of the page it links to.
+                        All values that can be used inside of the "media" attribute are CSS,
+                        and as such will not be featured here.
+                    </p>
+                    <h5>Sample:</h5>
+                    <pre><code>
+&lt;a href="#", media="value"&gt;Link&lt;/a&gt;
+                    </code></pre>
+                    <br>
+                    <h4>"ping"</h4>
+                    <p>
+                        The "ping" attribute can send a short message to a specified url whenever a user clicks the link. 
+                        This attribute is useful for tracking/monitoring. 
+                    </p>
+                    <h5>Sample:</h5>
+                    <pre><code>
+&lt;a href="#" ping="link"&gt;Link&lt;/a&gt;
+                    </code></pre>
+                    <br>
+                    <h4>"referrerpolicy"</h4>
+                    <p>
+                        The "referrerpolicy" attribute limits how much information the url within the link is allowed to recieve from the user.
+                        This is useful for security, performance, and compliance reasons.
+                        There are a couple different possible values for the attibute.
+                        They are:
+                    </p>
+                    <dl>
+                        <dt>"no-referrer"</dt>
+                        <dd>Sends NO referrer info at all.</dd>
+                        <dt>"no-referrer-when-downgrade"</dt>
+                        <dd>Sends full referrer info to HTTPS destinations(more secure than HTTP), but no info to HTTP destinations.</dd>
+                        <dt>"origin"</dt>
+                        <dd>Only tells the url what website they came from, excluding any other info.</dd>
+                        <dt>"origin-when-cross-origin"</dt>
+                        <dd>Sends full url if the link is on the same site, but only sends url if the link is on a different site.</dd>
+                        <dt>"same-origin"</dt>
+                        <dd>Only sends full referrer info if the link is on the same site, otherwise it sends nothing.</dd>
+                        <dt>"strict-origin"</dt>
+                        <dd>Sends the origin only to HTTPS sites only.</dd>
+                        <dt>"unsafe-url"</dt>
+                        <dd>Sends full url referrer to any destination, which is incredibly unsafe.</dd>
+                    </dl>
+                    <h5>Sample:</h5>
+                    <pre><code>
+&lt;a href="#" referrerpolicy = "value"&gt;Link&lt;/a&gt;
+                    </code></pre>
+                    <br>
+                    <h4>"rel"</h4>
+                    <p>
+                        The "rel" attribute lets the browser know the relationship between the link and the site.
+                        Here are its possible values:
+                    </p>
+                    <dl>
+                        <dt>"alternate"</dt>
+                        <dd>Provides a link to an alternate version of the document, such as mirrored, translated, etc.</dd>
+                        <dt>"author"</dt>
+                        <dd>Provides a link to the author of the document.</dd>
+                        <dt>"bookmark"</dt>
+                        <dd>A url used for bookmarking.</dd>
+                        <dt>"canonical"</dt>
+                        <dd>Tells browsers this is the preferred version of the page.</dd>
+                        <dt>"external"</dt>
+                        <dd>The linked document is not on the same site.</dd>
+                        <dt>"help"</dt>
+                        <dd>Provides a link to a help document.</dd>
+                        <dt>"license"</dt>
+                        <dd>Provides a link to the licensing information for the document.</dd>
+                        <dt>"next"</dt>
+                        <dd>Provides a link to the next document in the series.</dd>
+                        <dt>"nofollow"</dt>
+                        <dd>Used on links that send to an unendorsed document (similar to a paid link). Necessary on Google.</dd>
+                        <dt>"noopener"</dt>
+                        <dd>Prevents the newly opened page from being able to control or interact with the page that opened it. Very useful for preventing tabnabbing.</dd>
+                        <dt>"noreferrer"</dt>
+                        <dd>Makes the referrer unknown.</dd>
+                        <dt>"prev"</dt>
+                        <dd>Previous document in the series.</dd>
+                        <dt>"search"</dt>
+                        <dd>Links to a search tool used for the document.</dd>
+                        <dt>"sponsored"</dt>
+                        <dd>Paid or affiliate link.</dd>
+                        <dt>"tag"</dt>
+                        <dd>A tag/keyword for the current document.</dd>
+                        <dt>"ugc"</dt>
+                        <dd>Link was posted by a user.</dd>
+                    </dl>
+                    <h5>Sample:</h5>
+                    <pre><code>
+&lt;a href="#" rel="value"&gt;Link&lt;/a&gt;
+                    </code></pre>
+                    <br>
+                    <h4>"target"</h4>
+                    <p>
+                        Specifies how to open the linked url.
+                        There are five possible values:
+                    </p>
+                    <dl>
+                        <dt>"_blank"</dt>
+                        <dd>Opens url in a new window/tab.</dd>
+                        <dt>"_self"</dt>
+                        <dd>Opens the linked document in the same frame (default).</dd>
+                        <dt>"_parent"</dt>
+                        <dd>Opens the linked document in the parent frame.</dd>
+                        <dt>"_top"</dt>
+                        <dd>Opens linked document in the full body of the window.</dd>
+                        <dt>"Frame name"</dt>
+                        <dd>Not literally "framename", but rather the name of the target iframe.</dd>
+                    </dl>
+                    <h5>Sample:</h5>
+                    <pre><code>
+&lt;a href="#" target="value"&gt;Link&lt;/a&gt;
+                    </code></pre>
+                    <br>
+                    <h4>"type"</h4>
+                    <p>
+                        Specifies the MIME type of the url. A list of possible values can be found <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank">here</a>.
+                    </p>
+                </section>
+
+
+                <!--Navigation (Again)-->
+                <section>
+                    <hr>
+                    <h2>Navigation &lt;nav&gt; (AGAIN):</h2>
+                    <p>
+                        While the &lt;nav&gt; element may have already been explained in 3A,
+                        it is important to note &lt;nav&gt;'s importance in navigation through links.
+                        It is common to find the &lt;nav&gt; element containing links used for navigation.
+                        See 3A for information about &lt;nav&gt;.
+                    </p>
+                </section>
+
+
+            </div>
+
+
+            <!--PART F: Forms & Input-->
+            <div>
+                <hr>
+                <h1 class="chapterTitleABC">PART F: FORMS & INPUT</h1>
+
+
+                <!--Label-->
+                <section>
+                    <hr>
+                    <h2>Label &lt;label&gt;:</h2>
+                    <p>
+                        The &lt;label&gt; element is used to provide a lable for certain elements.
+                        This is useful for screenreaders and for identifying certain elements.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;label for="testMeter"&gt;This is a label for the meter&lt;/label&gt;
+&lt;meter id="testMeter" min="0" low="3" optimum="5" high="7" max="10" value="2"&gt;2 out of 10&lt;/meter&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <label for="testMeter">This is a label for the meter</label>
+                    <meter id="testMeter" min="0" low="3" optimum="5" high="7" max="10" value="2">2 out of 10</meter>
+                    <p>
+                        The &lt;label&gt; element only has one possible attribute, the "for" attribute.
+                        It is used to provide the id of an element that it should affect.
+                        This attribute is necessary.
+                    </p>
+                </section>
+
+
+                <!--Button-->
+                <section>
+                    <hr>
+                    <h2>Button &lt;button&gt;:</h2>
+                    <p>
+                        The &lt;button&gt; element is used to create a clickable button. 
+                        It is generally better to use &lt;button&gt; rather than creating a button using &lt;input&gt;.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+                        &lt;button type="button"&gt;Click Me!&lt;/button&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <button type="button">Click Me!</button>
+                    <p>
+                        The &lt;button&gt; element also has a few possible attributes.
+                        They are:
+                        <dl>
+                            <dt>"autofocus"</dt>
+                            <dd>- Makes it so that the button is automatically focused on when opening the website. This attribute should only be on one element in the entire website.</dd>
+                            <dt>"disabled"</dt>
+                            <dd>- Disables the button.</dd>
+                            <dt>"form"</dt>
+                            <dd>- </dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Form-->
+                <section>
+                    <hr>
+                    <h2>Form &lt;form&gt;:</h2>
+                    <p>
+                        
+                    </p>
+                </section>
+
+
+            </div>
+
+
+            <!--PART G: Tables-->
+            <div>
+                <hr>
+                <h1 class="chapterTitleABC">PART G: TABLES</h1>
+
+
+                <!--Caption-->
+                <section>
+                    <hr>
+                    <h2>Caption &lt;caption&gt;:</h2>
+                    <p>
+                        The &lt;caption&gt; element is used to add a caption to a table. 
+                        It must be inserted immediately after the &lt;caption&gt; block.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;table&gt;
+    &lt;caption&gt;This is a caption&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Item 1&lt;/td&gt;
+        &lt;td&gt;Item 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <table>
+                        <caption>This is a caption</caption>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                        <tr>
+                            <td>Item 1</td>
+                            <td>Item 2</td>
+                        </tr>
+                    </table>
+                </section>
+
+
+                <!--Column-->
+                <section>
+                    <hr>
+                    <h2>Column &lt;col&gt;:</h2>
+                    <p>
+                        The &lt;col&gt; element is used to specify column properties for each column within a &lt;colgroup&gt; element.
+                        They must ALWAYS be within the &lt;colgroup&gt; element.
+                        The only non-CSS attribute that can be applied to &lt;col&gt; (minus the universal attributes) is "span", indicating how many columns this should affect.
+                        Please note that only certain attributes will work on the &lt;col&gt; element, such as structure and background styling.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;table&gt;
+    &lt;colgroup&gt;
+        &lt;col span="2" style="background-color:#ff0000"&gt;
+    &lt;/colgroup&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Item 1&lt;/td&gt;
+        &lt;td&gt;Item 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <table>
+                        <colgroup>
+                            <col span="2" style="background-color:#ff0000">
+                        </colgroup>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                        <tr>
+                            <td>Item 1</td>
+                            <td>Item 2</td>
+                        </tr>
+                    </table>
+                </section>
+
+
+                <!--Column Group-->
+                <section>
+                    <hr>
+                    <h2>Column Group &lt;colgroup&gt;:</h2>
+                    <p>
+                        The &lt;colgroup&gt; element is a container for all &lt;col&gt; elements.
+                        It must be within a &lt;table&gt; element, after the caption and before any table data.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;table&gt;
+    &lt;colgroup&gt;
+        &lt;col span="2" style="background-color:#ff0000"&gt;
+    &lt;/colgroup&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Item 1&lt;/td&gt;
+        &lt;td&gt;Item 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <table>
+                        <colgroup>
+                            <col span="2" style="background-color:#00ff00">
+                        </colgroup>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                        <tr>
+                            <td>Item 1</td>
+                            <td>Item 2</td>
+                        </tr>
+                    </table>
+                </section>
+
+
+                <!--Table-->
+                <section>
+                    <hr>
+                    <h2>Table &lt;table&gt;:</h2>
+                    <p>
+                        The &lt;table&gt; element is used to create a table,
+                        and is used as a container for all other table related elements.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Item 1&lt;/td&gt;
+        &lt;td&gt;Item 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <table>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                        <tr>
+                            <td>Item 1</td>
+                            <td>Item 2</td>
+                        </tr>
+                    </table>
+                </section>
+
+
+                <!--Table Head-->
+                <section>
+                    <hr>
+                    <h2>Table Head &lt;thead&gt;:</h2>
+                    <p>
+                        The &lt;thead&gt; element defines the head section of the table.
+                        This does not include &lt;caption&gt; or &lt;colgroup&gt;.
+                        The element includes all headers.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header 1&lt;/th&gt;
+            &lt;th&gt;Header 2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Item 1&lt;/td&gt;
+        &lt;td&gt;Item 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>
+                        No visible changes occur, so no output will be shown.
+                    </p>
+                </section>
+
+
+                <!--Table Body-->
+                <section>
+                    <hr>
+                    <h2>Table Body &lt;tbody&gt;:</h2>
+                    <p>
+                        The &lt;tbody&gt; element defines the body section of the table. 
+                        This includes all table values (apart from footers).
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Item 1&lt;/td&gt;
+            &lt;td&gt;Item 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>
+                        No visible changes occur, so no output will be shown.
+                    </p>
+                </section>
+
+
+                <!--Table Footer-->
+                <Section>
+                    <hr>
+                    <h2>Table Footer &lt;tfoot&gt;:</h2>
+                    <p>
+                        The &lt;tfoot&gt; element defines the footer section of the table.
+                        This contains all table values considered footer content.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Item 1&lt;/td&gt;
+        &lt;td&gt;Item 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Footer Item 1&lt;/td&gt;
+            &lt;td&gt;Footer Item 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>
+                        No visible changes occur, so no output will be shown.
+                    </p>
+                </Section>
+
+
+                <!--Table Row-->
+                <section>
+                    <hr>
+                    <h2>Table Row &lt;tr&gt;:</h2>
+                    <p>
+                        The &lt;tr&gt; element is used as a container for &lt;th&gt; or &lt;td&gt; elements.
+                        It is used to identify a table row.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Item 1&lt;/td&gt;
+        &lt;td&gt;Item 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <table>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                        <tr>
+                            <td>Item 1</td>
+                            <td>Item 2</td>
+                        </tr>
+                    </table>
+                </section>
+
+
+                <!--Table Header-->
+                <section>
+                    <hr>
+                    <h2>Table Header &lt;th&gt;:</h2>
+                    <p>
+                        The &lt;th&gt; element is used to define a table/header inside of a table. 
+                        Any text within will be automatically centered and bolded.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Item 1&lt;/td&gt;
+        &lt;td&gt;Item 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <table>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                        <tr>
+                            <td>Item 1</td>
+                            <td>Item 2</td>
+                        </tr>
+                    </table>
+                    <p>
+                        The &lt;th&gt; element can also have a few attributes:
+                        <dl>
+                            <dt>"colspan"</dt>
+                            <dd>- Specifies the amount of columns the header should span.</dd>
+                            <dt>"headers"</dt>
+                            <dd>- Mainly for screen readers, "headers" lets you specify what header a table value is apart of. Must put the id of said header within the attribute.</dd>
+                            <dt>"rowspan</dt>
+                            <dd>- Specifies the amount of rows the header should span.</dd>
+                            <dt>"scope"</dt>
+                            <dd>- Specifies what the header is for. There are four options:
+                                <list>
+                                    <li>"col" (Affects the column under/above it)</li>
+                                    <li>"colgroup" (Affects 2 or more columns under/above it)</li>
+                                    <li>"row" (Affects the row to the left/right of the header)</li>
+                                    <li>"rowgroup" (Affects 2 or more rows to the left/right of the header)</li>
+                                </list>
+                            </dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Table Data-->
+                <section>
+                    <hr>
+                    <h2>Table Data &lt;td&gt;:</h2>
+                    <p>
+                        The &lt;td&gt; element defines a data cell inside a table. 
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Item 1&lt;/td&gt;
+        &lt;td&gt;Item 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <table>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                        <tr>
+                            <td>Item 1</td>
+                            <td>Item 2</td>
+                        </tr>
+                    </table>
+                    <p>
+                        The &lt;th&gt; element can also have a few attributes:
+                        <dl>
+                            <dt>"colspan"</dt>
+                            <dd>- Specifies the amount of columns the header should span.</dd>
+                            <dt>"headers"</dt>
+                            <dd>- Mainly for screen readers, "headers" lets you specify what header a table value is apart of. Must put the id of said header within the attribute.</dd>
+                            <dt>"rowspan</dt>
+                            <dd>- Specifies the amount of rows the header should span.</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+            </div>
+
+
+            <!--PART H: Interactive Elements-->
+            <div>
+                <hr>
+                <h1 class="chapterTitleABC">PART H: INTERACTIVE ELEMENTS</h1>
+
+
+                <!--Canvas-->
+                <section>
+                    <hr>
+                    <h2>Canvas &lt;canvas&gt;:</h2>
+                    <p>
+                        The &lt;canvas&gt; element is used whenever a canvas is used in the site.
+                        The &lt;canvas&gt; creates a blank canvas, however JS is needed to draw inside of it.
+                        it acts as a container for the graphics, and any text within is displayed in case the canvas isn't available/doesn't work.
+                        To specify, Javascript is used to create the actual graphis of the canvas by targeting the block if it has an id.
+                        The Javascript must always be OUTSIDE of the &lt;canvas&gt; element otherwise it becomes text.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;canvas id="Canvas1"&gt;
+    This canvas failed to load.
+&lt;/canvas&gt;
+
+(Insert JS here)
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <canvas id="Canvas1">
+                        This canvas failed to load.
+                    </canvas>
+                    <p>(Insert JS here)</p>
+                </section>
+
+
+                <!--Details-->
+                <section>
+                    <hr>
+                    <h2>Details &lt;details&gt;:</h2>
+                    <p>
+                        The &lt;details&gt; element is used to add dropdown details that can show and hide on demand.
+                        This element must be used with the &lt;summary&gt; element (see below).
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;details&gt;
+    &lt;summary&gt;Test Dropdown&lt;/summary&gt;
+    &lt;p&gt;Hey, it works!&lt;/p&gt;
+&lt;/details&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <details>
+                        <summary>Test Dropdown</summary>
+                        <p>Hey, it works!</p>
+                    </details>
+                    <p>
+                        The &lt;details&gt; element only has one possible attribute, that being "open", meaning the dropdown is open by default.
+                    </p>
+                </section>
+
+
+                <!--Summary-->
+                <section>
+                    <hr>
+                    <h2>Summary &lt;summary&gt;:</h2>
+                    <p>
+                        The &lt;summary&gt; element is used to provide a heading for a dropdown created by a &lt;details&gt; element.
+                        It always must be included within a &lt;details&gt; element, and always must be the first child.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;details&gt;
+    &lt;summary&gt;Test Dropdown&lt;/summary&gt;
+    &lt;p&gt;Hey, it works!&lt;/p&gt;
+&lt;/details&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>
+                        This element must be used within another element to produce a change. Please see above for an example involving &lt;summary&gt;.
+                    </p>
+                </section>
+
+
+                <!--Dialogue-->
+                <section>
+                    <hr>
+                    <h2>Dialogue &lt;dialog&gt;:</h2>
+                    <p>
+                        The &lt;dialog&gt; element creates a dialogue box.
+                        This is used for notifications, popups, and other similar applications.
+                        Note to self - When programming, use <strong>DIALOG</strong> and not <strong>DIALOGUE</strong>!
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;dialog open&gt;
+    This is a dialogue window.
+&lt;/dialog&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <dialog open>
+                        This is a dialogue window.
+                    </dialog>
+                    <p>
+                        The &lt;dialog&gt; element only has one attribute, being "open". This attribute is necessary to see the dialogue box if Javascript isn't being used (like in this case).
+                    </p>
+                </section>
+
+
+                <!--Iframe-->
+                <section>
+                    <hr>
+                    <h2>Iframe &lt;iframe&gt;:</h2>
+                    <p>
+                        The &lt;iframe&gt; element adds the possiblity of adding another document within your own.
+                        This is useful for adding external content, such as embedding a youtube video.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;iframe&gt;src="file:///D:/Coding%20Files/HTML%20Files/basicsOfHTML.html" width="70%" height="250"&lt;/iframe&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <iframe src="file:///D:/Coding%20Files/HTML%20Files/basicsOfHTML.html" width="70%" height="250"></iframe>
+                    <p>
+                        The &lt;iframe&gt; element also features a few different attributes.
+                        They are:
+                        <dl>
+                            <dt>"allow"</dt>
+                            <dd>
+                                - Allows the iframe certain specified features, such as:
+                            </dd>
+                            <dt>"allowfullscreen"</dt>
+                            <dd>- Allows fullscreen mode for embedded content, such as a youtube video.</dd>
+                            <dt>"height"</dt>
+                            <dd>- Defines the height of the iframe</dd>
+                            <dt>"loading"</dt>
+                            <dd>
+                                - Tells the browser when to load in the iframe. Has two possible attributes, those being:
+                                <list>
+                                    <li>"lazy" (Loads the iframe when it's within the viewport.)</li>
+                                    <li>"eager" (Loads the iframe before it's within the viewport.)</li>
+                                </list>
+                            </dd>
+                            <dt>"referrerpolicy"</dt>
+                            <dd>
+                                - Limits how much information the url within the link is allowed to recieve from the user.
+                                This is useful for security, performance, and compliance reasons.
+                                There are a couple different possible values for the attibute.
+                                They are:
+                                <list>
+                                    <li>"no-referrer" (Sends NO referrer info at all.)</li>
+                                    <li>"no-referrer-when-downgrade" (Sends full referrer info to HTTPS destinations(more secure than HTTP), but no info to HTTP destinations.)</li>
+                                    <li>"origin" (Only tells the url what website they came from, excluding any other info.)</li>
+                                    <li>"origin-when-cross-origin" (Sends full url if the link is on the same site, but only sends url if the link is on a different site.)</li>
+                                    <li>"same-origin" (Only sends full referrer info if the link is on the same site, otherwise it sends nothing.)</li>
+                                    <li>"strict-origin" (Sends the origin only to HTTPS sites only.)</li>
+                                    <li>"unsafe-url" (Sends full url referrer to any destination, which is incredibly unsafe.)</li>
+                                </list>
+                            </dd>
+                            <dt>"sandbox"</dt>
+                            <dd>
+                                A useful attribute that blocks forms, popups, and more.
+                                There are a few values, being:
+                                <list>
+                                    <li>"allow-forms" (Allows forms.)</li>
+                                    <li>"allow-pointer-lock" (Allows pointer locks.)</li>
+                                    <li>"allow-popusps" (Allows popups.)</li>
+                                    <li>"allow-same-origin" (Allows the iframe content to be treted as being from the same origin.)</li>
+                                    <li>"allow-scripts" (Allows to run scripts.)</li>
+                                    <li>"allow-top-navigation" (Allows the iframe content to navigate its top level browsing context.)</li>
+                                </list>
+                            </dd>
+                            <dt>"src"</dt>
+                            <dd>- Identifies a url/file path to the desired document.</dd>
+                            <dt>"title"</dt>
+                            <dd>- Provides a title for the iframe. Useful for screenreaders.</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Meter-->
+                <section>
+                    <hr>
+                    <h2>Meter &lt;meter&gt;:</h2>
+                    <p>
+                        The &lt;meter&gt; element is used to show a scalar measurement within a specified range.
+                        It shouldn't be used to show progress, that must be shown through the &lt;progress&gt; element.
+                        Any text within the &lt;meter&gt; element is used for accessibility.
+                        Always remember to add a &lt;label&gt;!
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;label for="testMeter1"&gt;&lt;/label&gt;
+&lt;meter id="testMeter1" min="0" max="10" optimum="5" value="7"&gt;7 out of 10&lt;/meter&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <label for="testMeter1">Test Meter</label>
+                    <meter id="testMeter1" min="0" max="10" optimum="5" value="7">7 out of 10</meter>
+                    <p>
+                        The &lt;meter&gt; element also features a few different attributes.
+                        They are:
+                        <dl>
+                            <dt>"low"</dt>
+                            <dd>- Anything below the value of this attribute is considered low. Only useful when you need to change a meter's color more than once.</dd>
+                            <dt>"high"</dt>
+                            <dd>- Anything above the value of this attribute is considered high. Only useful when you need to change a meter's color more than once.</dd>
+                            <dt>"max"</dt>
+                            <dd>- The max value of the meter.</dd>
+                            <dt>"min"</dt>
+                            <dd>- The minimum value of the meter.</dd>
+                            <dt>"optimum"</dt>
+                            <dd>- An attribute that changes the color of the meter bar after it reaches a certain number.</dd>
+                            <dt>"value"</dt>
+                            <dd>- The only necessary attribute, it specifies the current value accomplished in the meter.</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Progress-->
+                <section>
+                    <hr>
+                    <h2>Progress &lt;progress&gt;:</h2>
+                    <p>
+                        The &lt;progress&gt; element is used to create a progress bar.
+                        Any text within the &lt;progress&gt; element is used for accessibility.
+                        Don't forget to add a label.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;label for="testProgressBar1&gt;Test Progress Bar&lt;/label&gt;
+&lt;progress id="testProgressBar1" max="100" value="54"&gt;54%&lt;/progress&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <label for="testProgressBar1">Test Progress Bar</label>
+                    <progress id="testProgressBar1" max="100" value="54">54%</progress>
+                    <p>
+                        The &lt;progress&gt; element has two necessary attributes.
+                        They are:
+                        <dl>
+                            <dt>"max"</dt>
+                            <dd>- Defines the max value of the progress bar.</dd>
+                            <dt>"value"</dt>
+                            <dd>- Defines the current value the progress bar is at.</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Template-->
+                <section>
+                    <hr>
+                    <h2>Template &lt;template&gt;:</h2>
+                    <p>
+                        The &lt;template&gt; element is used to contain HTML content and hide it.
+                        It can only be used if Javascript is applied.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;template&gt;
+    &lt;p&gt;This text is hidden.&lt;/p&gt;
+&lt;/template&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>To have a visible output, this text needs Javascript, which I am unfortunately not too familiar with as of yet. Until I update this, enjoy this image of a frog ;b</p>
+                    <img src="https://cdn.wcs.org/2024/03/13/21/14/05/2d2c6f1b-71c4-4390-b7e2-deb21a0bc11f/shutterstock_2331893385.jpg" type="image/jpg">
+                </section>
+                
+
+            </div>
+
+
+            <!--PART I: Semantic Text-->
+            <div>
+                <hr>
+                <h1 class="chapterTitleABC">PART I: SEMANTIC TEXT</h1>
+
+
+                <!--Abbreviation-->
+                <section>
+                    <hr>
+                    <h2>Abbreviation &lt;abbr&gt;:</h2>
+                    <p>
+                        The element &lt;abbr&gt; lets the browser know that the text within is an abbreviation.
+                        This can also be used to let users know what the abbreviation means by including a "title" attribute within the element.
+                        When the user hovers over the text, the full unabbreviated version will be displayed.
+                        In general, it should be used on abbreviations, acronyms, and other similar cases.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;p&gt;
+    I really don't like people who say &lt;abbr title="Laugh Out Loud"&gt;LOL&lt;/abbr&gt;.
+&lt;/p&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>
+                        I really don't like people who say <abbr title="Laugh Out Loud">LOL</abbr>.
+                    </p>
+                </section>
+
+
+                <!--Address-->
+                <section>
+                    <hr>
+                    <h2>Address &lt;address&gt;:</h2>
+                    <p>
+                        The &lt;address&gt; element is used to define that the text within is important contact information.
+                        It renders the text in italic.
+                        It does not follow indentation.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;address&gt;
+    Written by: Rebytre
+    rebytre101@gmail.com
+&lt;/address&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <address>
+                        Written by: Rebytre<br>
+                        rebytre101@gmail.com
+                    </address>
+                </section>
+
+
+                <!--Bold-->
+                <section>
+                    <hr>
+                    <h2>Bold &lt;b&gt;:</h2>
+                    <p>
+                        The &lt;b&gt; element is used to bold any text within.
+                        According to HTML5 specification, it should be THE LAST RESORT option,
+                        with other elements such as &lt;h𝔁&gt;, &lt;em&gt;, &lt;strong&gt;, and &lt;mark&gt; elements being used first.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;p&gt;
+    This text is &lt;b&gt;BOLD&lt;/b&gt;.
+&lt;/p&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>
+                        This text is <b>BOLD</b>.
+                    </p>
+                </section>
+
+
+                <!--Emphasis-->
+                <section>
+                    <hr>
+                    <h2>Emphasis &lt;em&gt;:</h2>
+                    <p>
+                        The element &lt;em&gt; is used to emphasize text.
+                        It makes any text within display italicized.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;p&gt;This is &lt;em&gt;so&lt;/em&gt; boring.&lt;/p&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>This is <em>so</em> boring.</p>
+                </section>
+
+
+                <!--Italicize-->
+                <section>
+                    <hr>
+                    <h2>Italicize &lt;i&gt;:</h2>
+                    <p>
+                        The element &lt;i&gt; is used to italicize text.
+                        It should be considered as a last resort if any other semantic text doesn't fit the use.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;p&gt;And then he said &lt;i&gt;Bonjour!&lt;/i&gt;, what could that mean...&lt;/p&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>And then he said "<i>Bonjour!</i>", what could that mean...</p>
+                </section>
+
+
+                <!--Mark-->
+                <section>
+                    <hr>
+                    <h2>Mark &lt;mark&gt;:</h2>
+                    <p>
+                        The element &lt;mark&gt; highlights text and defines it as valuable.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;p&gt;Don't forget the &lt;mark&gt;cookies&lt;/mark&gt;!&lt;/p&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>Don't forget the <mark>cookies</mark>!</p>
+                </section>
+
+
+                <!--Strong-->
+                <section>
+                    <hr>
+                    <h2>Strong &lt;strong&gt;:</h2>
+                    <p>
+                        The element &lt;strong&gt; is used to define text that is important.
+                        Any content inside is displayed in bold.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;p&gt;Remember to use &lt;strong&gt;common sense&lt;/strong&gt; always!&lt;/p&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>Remember to use <strong>common sense</strong> always!</p>
+                </section>
+
+
+            </div>
+
+
+        </div>
+
+
+    </body>
+
+
+</html>
+
