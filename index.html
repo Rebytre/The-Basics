@@ -1586,7 +1586,7 @@
                     </p>
                     <h4>Sample:</h4>
                     <pre><code>
-                        &lt;button type="button"&gt;Click Me!&lt;/button&gt;
+&lt;button type="button"&gt;Click Me!&lt;/button&gt;
                     </code></pre>
                     <h4>Output:</h4>
                     <button type="button">Click Me!</button>
@@ -1599,7 +1599,385 @@
                             <dt>"disabled"</dt>
                             <dd>- Disables the button.</dd>
                             <dt>"form"</dt>
-                            <dd>- </dd>
+                            <dd>- Specifies if the button is related to a form, and the value should be the ID of the form.</dd>
+                            <dt>"formaction"</dt>
+                            <dd>- Specifies to which URL it should send the data.</dd>
+                            <dt>"formenctype"</dt>
+                            <dd>
+                                - Specifies whether or not the information should be encrypted. Potential values:
+                                <list>
+                                    <li>"application/x-www-form-urlencoded" (Enabled by default, encodes all text before sending)</li>
+                                    <li>"multipart/form-data" (Necesary if the user wants to send a file through the form)</li>
+                                    <li>"text/plain" (Sends the info in plain text)</li>
+                                </list>
+                            </dd>
+                            <dt>"formmethod"</dt>
+                            <dd>- Defines the HTTP transaction, "get" or "post"</dd>
+                            <dt>"formnovalidate"</dt>
+                            <dd>- Specifies that the form should not be validated upon submission.</dd>
+                            <dt>"formtarget"</dt>
+                            <dd>
+                                Specifies where to open the response for submission.
+                                <list>
+                                    <li>"_blank" (Opens url in a new window/tab.)</li>
+                                    <li>"_self" (Opens the linked document in the same frame (default)).</li>
+                                    <li>"_parent" (Opens the linked document in the parent frame.)</li>
+                                    <li>"_top" (Opens linked document in the full body of the window.)</li>
+                                    <li>"Frame name" (Not literally "framename", but rather the name of the target iframe.)</li>
+                                </list>
+                            </dd>
+                            <dt>"name"</dt>
+                            <dd>- Name of the button.</dd>
+                            <dt>"value"</dt>
+                            <dd>- Specifies an initial value of the button that should be sent when pressed.</dd>
+                            <dt>"type"</dt>
+                            <dd>
+                                Specifies the type of the button. Possible values include:
+                                <list>
+                                    <li>"button" (A regular clickable button)</li>
+                                    <li>"reset" (resets form fields to default values)</li>
+                                    <li>"submit" (submits a form)</li>
+                                </list>
+                            </dd>
+                        </dl>
+                    </p>
+                </section>
+
+                <!--Select-->
+                <section>
+                    <hr>
+                    <h2>Select &lt;select&gt;:</h2>
+                    <p>
+                        The &lt;select&gt; element is used to create dropdown menus.
+                        It is most often used in forms.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;select&gt;
+    &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <select>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                    <p>
+                        The &lt;select&gt; element also contains a few potential attributes. They are:
+                        <dl>
+                            <dt>"autofocus"</dt>
+                            <dd>- Specifies that the element should automatically gains focus upon the site being rendered.</dd>
+                            <dt>"disabled"</dt>
+                            <dd>- Specifies that the element should be disabled.</dd>
+                            <dt>"form"</dt>
+                            <dd>- Defines which form the element is apart of.</dd>
+                            <dt>"multiple"</dt>
+                            <dd>- Specifies that multiple options can be picked.</dd>
+                            <dt>"name"</dt>
+                            <dd>- Defines a name for the element.</dd>
+                            <dt>"required"</dt>
+                            <dd>- Specifies that the list should be filled to submit the form.</dd>
+                            <dt>"size"</dt>
+                            <dd>- Defines how many options should be visible in the list.</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Option-->
+                <section>
+                    <hr>
+                    <h2>Option &lt;option&gt;:</h2>
+                    <p>
+                        The &lt;option&gt; element is used within &lt;select&gt; elements,
+                        to specify an option for the list.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;select&gt;
+    &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <select>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                    <p>
+                        The &lt;option&gt; element also contains a list of attributes. They are as follows:
+                        <dl>
+                            <dt>"disabled"</dt>
+                            <dd>- Specifies that an option should be disabled.</dd>
+                            <dt>"label"</dt>
+                            <dd>- Specifies a shorter label for an option.</dd>
+                            <dt>"selected"</dt>
+                            <dd>- Specifies that the option should be pre-selected upon rendering the site.</dd>
+                            <dt>"value"</dt>
+                            <dd>- Specifies the value that should be sent to the server.</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Field Set-->
+                <section>
+                    <hr>
+                    <h2>Field Set &lt;fieldset&gt;:</h2>
+                    <p>
+                        The &lt;fieldset&gt; element is used to add a border around a form.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;fieldset&gt;
+    &lt;select&gt;
+        &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+        &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+        &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+    &lt;/select&gt;
+&lt;fieldset&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <fieldset>
+                        <select>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </fieldset>
+                    <p>
+                        The &lt;fieldset&gt; element has a few attributes that can be used. They are:
+                        <dl>
+                            <dt>"disabled"</dt>
+                            <dd>- Specifies that a group of elements withing the &lt;fieldset&gt; element should be disabled.</dd>
+                            <dt>"form"</dt>
+                            <dd>- Specifies which form the element is apart of.</dd>
+                            <dt>"name"</dt>
+                            <dd>- Specifies a name for the &lt;fieldset&gt; element.</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Legend-->
+                <section>
+                    <hr>
+                    <h2>Legend &lt;legend&gt;:</h2>
+                    <p>
+                        The &lt;legend&gt; element provides a title that can be found within the &lt;fieldset&gt; element.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;fieldset&gt;
+    &lt;legend&gt;Legend:&lt;/legend&gt;
+        &lt;select&gt;
+            &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+            &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+            &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+        &lt;/select&gt;
+&lt;fieldset&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <fieldset>
+                        <legend>Legend:</legend>
+                        <select>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </fieldset>
+                    <p>
+                        The &lt;legend&gt; element has a few attributes that can be used. They are:
+                        <dl>
+                            <dt>"disabled"</dt>
+                            <dd>- Specifies that the &lt;legend&gt; element should be disabled.</dd>
+                            <dt>"form"</dt>
+                            <dd>- Specifies which form the element is apart of.</dd>
+                            <dt>"name"</dt>
+                            <dd>- Specifies a name for the &lt;legend&gt; element.</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--input-->
+                <section>
+                    <hr>
+                    <h2>Input &lt;input&gt;:</h2>
+                    <p>
+                        The &lt;input&gt; element is used to create a single-line input field.
+                        It is the most important form element.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;input type="text" placeholder="type here"&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <input type="text" placeholder="type here">
+                    <p>
+                        The &lt;input&gt; has a multitude of different attributes that can be attached to the element.
+                        They are:
+                        <dl>
+                            <dt>"accept"</dt>
+                            <dd>
+                                - Specifies a filter for what file types are accepted. Only applies to input type "file".
+                                Possible values:
+                                <list>
+                                    <li>"file_extension" (Specify the accepted file extensions (eg. png, pdf, etc.))</li>
+                                    <li>"audio/*" (All sound files are accepted)</li>
+                                    <li>"video/*" (All video files are accepted)</li>
+                                    <li>"image/*" (All image files are accepted)</li>
+                                    <li>media_type (All media files accepted)</li>
+                                </list>
+                            </dd>
+                            <dt>"alt"</dt>
+                            <dd>- Specifies an alternate text for images (only if input type is image)</dd>
+                            <dt>"autocomplete"</dt>
+                            <dd>- Specifies whether or not an input element should have autocomplete or not.</dd>
+                            <dt>"autofocus"</dt>
+                            <dd>- Specifies whether the element should get focus upon rendering the page (only one allowed per page).</dd>
+                            <dt>"checked"</dt>
+                            <dd>Specifies that the element should be pre-selected when the page loads (for type "checkbox" or "radio")</dd>
+                            <dt>"disabled"</dt>
+                            <dd>- Specifies if an element should be disabled.</dd>
+                            <dt>"form"</dt>
+                            <dd>- Specifies what form the element belongs to. Value should be the ID of the form.</dd>
+                            <dt>"formaction"</dt>
+                            <dd>- Specifies to which URL it should send the data.</dd>
+                            <dt>"formenctype"</dt>
+                            <dd>
+                                - Specifies whether or not the information should be encrypted. Potential values:
+                                <list>
+                                    <li>"application/x-www-form-urlencoded" (Enabled by default, encodes all text before sending)</li>
+                                    <li>"multipart/form-data" (Necesary if the user wants to send a file through the form)</li>
+                                    <li>"text/plain" (Sends the info in plain text)</li>
+                                </list>
+                                    </dd>
+                            <dt>"formmethod"</dt>
+                            <dd>- Defines the HTTP transaction, "get" or "post"</dd>
+                            <dt>"formnovalidate"</dt>
+                            <dd>- Specifies that the form should not be validated upon submission.</dd>
+                            <dt>"formtarget"</dt>
+                            <dd>
+                                Specifies where to open the response for submission.
+                                <list>
+                                    <li>"_blank" (Opens url in a new window/tab.)</li>
+                                    <li>"_self" (Opens the linked document in the same frame (default)).</li>
+                                    <li>"_parent" (Opens the linked document in the parent frame.)</li>
+                                    <li>"_top" (Opens linked document in the full body of the window.)</li>
+                                    <li>"Frame name" (Not literally "framename", but rather the name of the target iframe.)</li>
+                                </list>
+                            </dd>
+                            <dt>"height"</dt>
+                            <dd>- Specifies the height of an input element (only if the input element is "image" type).</dd>
+                            <dt>"list"</dt>
+                            <dd>Refers to a &lt;datalist&gt; element that contains predefined options for the &lt;input&gt; element.</dd>
+                            <dt>"max"</dt>
+                            <dd>- Specifies the maximum value for an &lt;input&gt; element. Can be either date or number.</dd>
+                            <dt>"maxlength"</dt>
+                            <dd>- Specifies the maximum length of the &lt;input&gt; element.</dd>
+                            <dt>"min"</dt>
+                            <dd>- Specifies the minimum value for an &lt;input&gt; element. Can be either date or number.</dd>
+                            <dt>"minlength"</dt>
+                            <dd>- Specifies the minimum length of the &lt;input&gt; element.</dd>
+                            <dt>"multiple"</dt>
+                            <dd>- Specifies that the input element can take more than one value at a time (particularly useful for file submission)</dd>
+                            <dt>"name"</dt>
+                            <dd>- Provides a name for the input element.</dd>
+                            <dt>"pattern"</dt>
+                            <dd>- A regular expression that the input's element is checked against. The structure of the pattern value is (within square brackets) any symbols that need to match up to (ie. [a-zA-Z]), and how long it should be (in curly brackets ie. {4}).</dd>
+                            <dt>"placeholder"</dt>
+                            <dd>- Placeholder text for the input field.</dd>
+                            <dt>"readonly"</dt>
+                            <dd>- Specifies that an input field is read only. Great for limiting choices based on other values given.</dd>
+                            <dt>"required"</dt>
+                            <dd>- Specifies that the field is required before submition.</dd>
+                            <dt>"size"</dt>
+                            <dd>- Specifies the width of an input element. Measured in characters.</dd>
+                            <dt>"src"</dt>
+                            <dd>Specifies the URL of the image toi use as a submit button (only for image type input elements).</dd>
+                            <dt>"type"</dt>
+                            <dd>
+                                - Possibly the attribute with the largest plethora of possible values, it specifies the type of input to be used in the element.
+                                The possible values are as follows:
+                                <list>
+                                    <li>"button" (Clickable Button)</li>
+                                    <li>"checkbox" (Checkbox)</li>
+                                    <li>"color" (Color picker)</li>
+                                    <li>"date" (Date control)</li>
+                                    <li>"datetime-local" (Date + Time control)</li>
+                                    <li>"email" (Email Address)</li>
+                                    <li>"file" (File select + Browse button)</li>
+                                    <li>"hidden" (Hidden input field)</li>
+                                    <li>"image" (Image as submit button)</li>
+                                    <li>"month" (Month + Year control)</li>
+                                    <li>"number" (Field for entering a number)</li>
+                                    <li>"password" (Password Field)</li>
+                                    <li>"radio" (Radio Button)</li>
+                                    <li>"range" (Range Control (similar to slider))</li>
+                                    <li>"reset" (Reset Button)</li>
+                                    <li>"search" (Text field for searching a string)</li>
+                                    <li>"submit" (Submit button)</li>
+                                    <li>"tel" (Field for telephone number)</li>
+                                    <li>"text" (Text field)</li>
+                                    <li>"time" (Control for entering time)</li>
+                                    <li>"url" (URL Field)</li>
+                                    <li>"week" (Control for week and year)</li>
+                                </list>
+                            </dd>
+                            <dt>"value"</dt>
+                            <dd>- Specifies a pre-existing value for the input element.</dd>
+                            <dt>"width"</dt>
+                            <dd>- Specifies the width of an input field (applicable only to image type)</dd>
+                        </dl>
+                    </p>
+                </section>
+
+
+                <!--Text Area-->
+                <section>
+                    <hr>
+                    <h2>Text Area &lt;textarea&gt;:</h2>
+                    <p>
+                        Similar to &lt;input&gt;, &lt;textarea&gt; is exactly the same except it allows for the input field to be longer on the vertical axis.
+                        It is useful for whenever a user needs to submit a larger amount of text information.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;textarea&gt;This is a &lt;textarea&gt;.&lt;/textarea&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <textarea>This is a &lt;textarea&gt;.</textarea>
+                    <p>
+                        Here are the potential attributes and their values for the &lt;textarea&gt; element:
+                        <dl>
+                            <dt>"autofocus"</dt>
+                            <dd>- Specifies that the text area should get automatic focus when the page loads.</dd>
+                            <dt>"cols"</dt>
+                            <dd>- Specifies the width of the input area.</dd>
+                            <dt>"disabled"</dt>
+                            <dd>- Specifies that the element should be disabled.</dd>
+                            <dt>"form"</dt>
+                            <dd>- Specifies the form that the element is apart of.</dd>
+                            <dt>"maxlength"</dt>
+                            <dd>- Specifies the maximum number of characters allowed within the input field.</dd>
+                            <dt>"name"</dt>
+                            <dd>- Specifies the name of the element.</dd>
+                            <dt>"placeholder"</dt>
+                            <dd>- Provides a default value for the element.</dd>
+                            <dt>"readonly"</dt>
+                            <dd>- Makes an &lt;textarea&gt; element read only, meaning the value cannot be changed by the user.</dd>
+                            <dt>"required"</dt>
+                            <dd>- Specifies that the field must be filled in order to submit the form.</dd>
+                            <dt>"rows"</dt>
+                            <dd>- Specifies the vertical length of the element.</dd>
+                            <dt>"wrap"</dt>
+                            <dd>- Specifies whether the text submitted should contain new lines. Value is either "hard" (do wrap") or soft (don't wrap).</dd>
                         </dl>
                     </p>
                 </section>
@@ -1610,7 +1988,67 @@
                     <hr>
                     <h2>Form &lt;form&gt;:</h2>
                     <p>
-                        
+                        The &lt;form&gt; element is used to create an HTML form designed to collect user input. 
+                        It can contain one or more form elements.
+                    </p>
+                    <h4>Sample:</h4>
+                    <p>Placeholder text... (I'm not making an entire form for this, sorry!)</p>
+                    <p>
+                        The &lt;form&gt; element can have a few attributes that come with it, those being:
+                        <dl>
+                            <dt>"accept-charset"</dt>
+                            <dd>- Specifies the character encodings that should be used for the form submission.</dd>
+                            <dt>"action"</dt>
+                            <dd>- Specifies where to send the form-data upon submission.</dd>
+                            <dt>"autocomplete"</dt>
+                            <dd>- Specifies whether a form should have autocomplete or not (yes/no).</dd>
+                            <dt>"enctype"</dt>
+                            <dd>
+                                - Specifies whether or not the information should be encrypted. Potential values (only if method="post"):
+                                <list>
+                                    <li>"application/x-www-form-urlencoded" (Enabled by default, encodes all text before sending)</li>
+                                    <li>"multipart/form-data" (Necesary if the user wants to send a file through the form)</li>
+                                    <li>"text/plain" (Sends the info in plain text)</li>
+                                </list>
+                            </dd>
+                            <dt>"method"</dt>
+                            <dd>
+                                - Specifies the HTTP method to use when sending data. Values are:
+                                <list>
+                                    <li>"dialog" ((When the form is inside a <dialog> element) Closes the dialog and causes a submit event to be executed on submission, without submitting data or clearing the form)</li>
+                                    <li>"get" (Default. Sends the data in name/value pairs.)</li>
+                                    <li>"post" (Sends the form-data as HTTP post transaction)</li>
+                                </list>
+                            </dd>
+                            <dt>"name"</dt>
+                            <dd>- Specifies the name of the element.</dd>
+                            <dt>"novalidate"</dt>
+                            <dd>- Specifies that the form should not be validated upon submission.</dd>
+                            <dt>"rel"</dt>
+                            <dd>The "rel" attribute lets the browser know the relationship between the link and the site. Here are its possible values:
+                                <list>
+                                    <li>"external" (The linked document is not on the same site.)</li>
+                                    <li>"help" (Provides a link to a help document.)</li>
+                                    <li>"license" (Provides a link to the licensing information for the document.)</li>
+                                    <li>"next" (Provides a link to the next document in the series.)</li>
+                                    <li>"nofollow" (Used on links that send to an unendorsed document (similar to a paid link). Necessary on Google.)</li>
+                                    <li>"noreferrer" (Makes the referrer unknown.)</li>
+                                    <li>"prev" (Previous document in the series.)</li>
+                                    <li>"search" (Links to a search tool used for the document.)</li>
+                                </list>
+                            </dd>
+                            <dt>"target"</dt>
+                            <dd>
+                                Specifies where to open the response for submission.
+                                <list>
+                                    <li>"_blank" (Opens url in a new window/tab.)</li>
+                                    <li>"_self" (Opens the linked document in the same frame (default)).</li>
+                                    <li>"_parent" (Opens the linked document in the parent frame.)</li>
+                                    <li>"_top" (Opens linked document in the full body of the window.)</li>
+                                    <li>"Frame name" (Not literally "framename", but rather the name of the target iframe.)</li>
+                                </list>
+                            </dd>
+                        </dl>
                     </p>
                 </section>
 
@@ -2435,4 +2873,3 @@
 
 
 </html>
-
