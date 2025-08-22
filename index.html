@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <title>HTML Info Website - Rebytre</title>
+        <title>HTML Demo - Rebytre</title>
         <link rel="icon" type="image/png" href="HTML5.png">
-        <link rel="stylesheet" href="HTMLDemoFile.css">
         <style>
+            body {
+                color: #ffffff;
+                background-color: #2e2e2e;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            h2, h3, h4, h5{
+                border-bottom:2px solid #ffffff0f;
+            }
+
+            dl, dt, dd, li{
+                padding: 4px;
+            }
+
+            dt{
+                border-bottom:2px solid #ffffff0f
+            }
+
+            hr {
+                color: #cecece;
+            }
+
             #spanDemoE1{
-                color:#ff0000
+                color:#fa7a7a;
             }
 
             #spanDemoE2{
-                color:#0000ff
+                color:#6969fa;
             }
 
             #divDemoE1{
-                color:#ff0000
+                color:#f87878;
             }
 
             #divDemoE2{
-                color:#0000ff
+                color:#6c6cfc;
             }
 
             .chapterTitleABC{
@@ -34,6 +56,11 @@
                 font-family:Arial;
                 text-align: center;
             }
+
+            a {
+                color: #88b3f3;
+            }
+
         </style>
     </head>
     <body>
@@ -48,9 +75,9 @@
                 <hr>
                 <h2>Document Type Declaration &lt;!DOCTYPE&gt;:</h2>
                 <p>
-                    What is probably the most essential part of an HTML program,
-                    the &lt;!DOCTYPE&gt; element must always be the first line in an HTML file.
-                    This element tells the browser to render the page in standards-compliant mode, using HTML5.
+                    What is probably the most essential part of an HTML program,<br>
+                    the &lt;!DOCTYPE&gt; element must always be the first line in an HTML file.<br>
+                    This element tells the browser to render the page in standards-compliant mode, using HTML5.<br>
                     It is also usually followed up by "html", meaning the document is using HTML5.
                 </p>
                 <h4>Sample:</h4>
@@ -65,8 +92,8 @@
                 <hr>
                 <h2>HTML Root &lt;html&gt;:</h2>
                 <p>
-                    The &lt;html&gt; element is the second most important element within an HTML program,
-                    as it must contain all other elements apart from &lt;!DOCTYPE&gt;. 
+                    The &lt;html&gt; element is the second most important element within an HTML program,<br>
+                    as it must contain all other elements apart from &lt;!DOCTYPE&gt;. <br>
                     The &lt;html&gt; element represents the root of an HTML document.
                 </p>
                 <h4>Sample:</h4>
@@ -75,8 +102,8 @@
 &lt;/html&gt;
                 </code></pre>
                 <p>
-                    The &lt;html&gt; element can also have a few attributes, 
-                    mainly used to help browsers identify the language and direction of the text within.
+                    The &lt;html&gt; element can also have a few attributes, <br>
+                    mainly used to help browsers identify the language and direction of the text within.<br>
                     These are the most important attributes:
                 </p>
                 <dl>
@@ -93,7 +120,7 @@
                 <hr>
                 <h2>Commenting &lt;!----&gt;:</h2>
                 <p>
-                    Commenting is an important feature within just about any programming language as it can be used to label and organize code. 
+                    Commenting is an important feature within just about any programming language as it can be used to label and organize code. <br>
                     Within HTML, a comment must be surrounded by "&lt;!--" and "--&gt;". 
                 </p>
                 <h4>Sample:</h4>
@@ -114,7 +141,7 @@
                 <hr>
                 <h2>Head &lt;head&gt;:</h2>
                 <p>
-                    The &lt;head&gt; element is one of two main elements which contain all other elements excluding &lt;!DOCTYPE&gt; and &lt;html&gt;. 
+                    The &lt;head&gt; element is one of two main elements which contain all other elements excluding &lt;!DOCTYPE&gt; and &lt;html&gt;. <br>
                     The &lt;head&gt; element contains all metadata, code that doesn't directly affect what is viewed on the webpage.
                 </p>
                 <h4>Sample:</h4>
@@ -131,7 +158,7 @@
                 <hr>
                 <h2>Title &lt;title&gt;:</h2>
                 <p>
-                    The &lt;title&gt; element is used to define a title for the webpage.
+                    The &lt;title&gt; element is used to define a title for the webpage.<br>
                     They are a necessary element within an HTML document, however, there can only be one &lt;title&gt; element within a file.
                 </p>
                 <h4>Sample:</h4>
@@ -146,7 +173,7 @@
                 <hr>
                 <h2>Link &lt;link&gt;:</h2>
                 <p>
-                    The &lt;link&gt; element is used to link to external resources.
+                    The &lt;link&gt; element is used to link to external resources.<br>
                     The &lt;link&gt; element is completely empty, only using attributes.
                 </p>
                 <h4>Sample:</h4>
@@ -223,7 +250,7 @@
                 <hr>
                 <h2>Meta &lt;meta&gt;:</h2>
                 <p>
-                    The &lt;meta&gt; element is used to define metadata of the page.
+                    The &lt;meta&gt; element is used to define metadata of the page.<br>
                     This includes keywords, author, and other important information.
                 </p>
                 <h4>Sample:</h4>
@@ -284,7 +311,7 @@
                 <hr>
                 <h2>Style &lt;style&gt;:</h2>
                 <p>
-                    The &lt;style&gt; element is used for adding small style sheets to pages without the use of external files.
+                    The &lt;style&gt; element is used for adding small style sheets to pages without the use of external files.<br>
                     This element usually gets overshadowed by external CSS files, however it is still useful for smaller websites or testing without the need to manage files.
                 </p>
                 <h4>Sample:</h4>
@@ -307,8 +334,8 @@
                 <hr>
                 <h2>Script &lt;script&gt;:</h2>
                 <p>
-                    The &lt;script&gt; element is used to add JavaScript to a program.
-                    It is recommended to put it inside the &lt;head&gt; container as it keeps the code more organized and it is the better option for larger websites.
+                    The &lt;script&gt; element is used to add JavaScript to a program.<br>
+                    It is recommended to put it inside the &lt;head&gt; container as it keeps the code more organized and it is the better option for larger websites.<br>
                     Do note however that it is also possible to use it outside of the &lt;head&gt; element. This is the better option for smaller websites.
                 </p>
                 <h4>Sample:</h4>
@@ -332,7 +359,7 @@
                 <hr>
                 <h2>No Script &lt;noscript&gt;:</h2>
                 <p>
-                    The &lt;noscript&gt; element is used as a fallback in case JavaScript is disabled/not supported in the browser.
+                    The &lt;noscript&gt; element is used as a fallback in case JavaScript is disabled/not supported in the browser.<br>
                     Any text within the element is displayed if JavaScript is not available.
                 </p>
                 <h4>Sample:</h4>
@@ -354,7 +381,7 @@
             <!--PART A: Content Structure-->
             <div>
                 <hr>
-                <h1 class="chapterTitleABC">PART A: CONTENT STRUCTURE   NEEDS RESTRUCTURING !!!!!!!!!!!!</h1>
+                <h1 class="chapterTitleABC">PART A: CONTENT STRUCTURE</h1>
 
 
                 <!--Navigation Menus-->
@@ -362,8 +389,8 @@
                     <hr>
                     <h2>Navigation Menus &lt;nav&gt;:</h2>
                     <p>
-                        The function &lt;nav&gt; specifies to the browser which links are used for site navigation. 
-                        The &lt;nav&gt; element only contains links that act as navigation for the site.
+                        The function &lt;nav&gt; specifies to the browser which links are used for site navigation. <br>
+                        The &lt;nav&gt; element only contains links that act as navigation for the site.<br>
                         Its main goal is to assist with accessibility and helping search engines understand how the website is structured.
                     </p>
                     <h4>Sample:</h4>
@@ -389,8 +416,8 @@
                     <hr>
                     <h2>Headers &lt;header&gt;:</h2>
                     <p>
-                        The &lt;header&gt; element usually contains all introductory content or navigational links.
-                        This can mean images, text, links, and author information.
+                        The &lt;header&gt; element usually contains all introductory content or navigational links.<br>
+                        This can mean images, text, links, and author information.<br>
                         You cannot place a &lt;header&gt; element inside an &lt;address&gt;, &lt;footer&gt;, or another &lt;header&gt; element.
                     </p>
                     <h4>Sample:</h4>
@@ -416,8 +443,8 @@
                     <hr>
                     <h2>Main Content &lt;main&gt;:</h2>
                     <p>
-                        The &lt;main&gt; element usually contains all of the main content of a webpage.
-                        There should only be one &lt;main&gt; element per page.
+                        The &lt;main&gt; element usually contains all of the main content of a webpage.<br>
+                        There should only be one &lt;main&gt; element per page.<br>
                         It also should not be placed inside &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;header&gt;, or &lt;nav&gt; elements.
                     </p>
                     <h4>Sample:</h4>
@@ -443,7 +470,7 @@
                     <hr>
                     <h2>Address &lt;address&gt;:</h2>
                     <p>
-                        The &lt;address&gt; element is used to define an author's or owner's contact information.
+                        The &lt;address&gt; element is used to define an author's or owner's contact information.<br>
                         Contact information can be information such as an email address, phone number, address, URL, and more.
                     </p>
                     <h4>Sample:</h4>
@@ -468,10 +495,10 @@
                     <hr>
                     <h2>Section &lt;section&gt;:</h2>
                     <p>
-                        The &lt;section&gt; element signifies a section inside a document.
-                        The main difference between &lt;section&gt; and &lt;div&gt; is that &lt;section&gt; can be viewed by browsers,
-                        as in they will recognize that whatever is inside of &lt;section&gt; is a standalone section,
-                        while &lt;div&gt; has no semantic meaning on its own,
+                        The &lt;section&gt; element signifies a section inside a document.<br>
+                        The main difference between &lt;section&gt; and &lt;div&gt; is that &lt;section&gt; can be viewed by browsers,<br>
+                        as in they will recognize that whatever is inside of &lt;section&gt; is a standalone section,<br>
+                        while &lt;div&gt; has no semantic meaning on its own,<br>
                         so its contents aren't treated as a distinct section unless styled or given certain attributes.
                     </p>
                     <pre><code>
@@ -492,8 +519,8 @@
                     <hr>
                     <h2>Article &lt;article&gt;:</h2>
                     <p>
-                        The &lt;article&gt; element is similar to &lt;section&gt;,
-                        except, it is intended for content that can stand alone independantly.
+                        The &lt;article&gt; element is similar to &lt;section&gt;,<br>
+                        except, it is intended for content that can stand alone independantly.<br>
                         The element can feature content such as blog posts, user comments, or magazine articles.
                     </p>
                     <h4>Sample:</h4>
@@ -514,7 +541,7 @@
                     <hr>
                     <h2>Aside &lt;aside&gt;:</h2>
                     <p>
-                        The &lt;aside&gt; element is used for containing additional information.
+                        The &lt;aside&gt; element is used for containing additional information.<br>
                         The &lt;aside&gt; element can be used for author bios, related links/articles, notes, sidebars, or tips.
                     </p>
                     <h4>Sample:</h4>
@@ -538,8 +565,8 @@
                     <hr>
                     <h2>Footer &lt;footer&gt;:</h2>
                     <p>
-                        The &lt;footer&gt; element is found at the bottom of a section/page. 
-                        It typically includes information about the author, copyright rules, contact info, and related links.
+                        The &lt;footer&gt; element is found at the bottom of a section/page. <br>
+                        It typically includes information about the author, copyright rules, contact info, and related links.<br>
                         Any contact info inside the &lt;footer&gt; is typically put into an &lt;address&gt; element.
                     </p>
                     <h4>Sample:</h4>
@@ -566,10 +593,10 @@
                     <hr>
                     <h2>Span &lt;span&gt;:</h2>
                     <p>
-                        The &lt;span&gt; element acts as a group, with anything inside of it being a part of that group.
-                        It is useful for affecting multiple elements at once.
-                        Unlike &lt;div&gt;, &lt;span&gt; is an inline element,
-                        meaning it doesn't create new indentations around it.
+                        The &lt;span&gt; element acts as a group, with anything inside of it being a part of that group.<br>
+                        It is useful for affecting multiple elements at once.<br>
+                        Unlike &lt;div&gt;, &lt;span&gt; is an inline element,<br>
+                        meaning it doesn't create new indentations around it.<br>
                         This is useful for applying styles to certain sections of text without creating unnecessary indentation.
                     </p>
                     <h4>Sample:</h4>
@@ -592,12 +619,12 @@
                     <hr>
                     <h2>Divides &lt;div&gt;:</h2>
                     <p>
-                        The &lt;div&gt; element acts as a group, with anything inside of it being a part of that group.
-                        It is useful for affecting multiple elements at once.
-                        Unlike &lt;span&gt;, &lt;div&gt; is a block-level element,
-                        meaning it creates indentations before and after itself.
-                        This is usually used for dividing code into multiple easier-to-manage sections.
-                        Make sure not to add &lt;div&gt; elements into inline elements (ie. &lt;a&gt;, &lt;span&gt;, etc.)
+                        The &lt;div&gt; element acts as a group, with anything inside of it being a part of that group.<br>
+                        It is useful for affecting multiple elements at once.<br>
+                        Unlike &lt;span&gt;, &lt;div&gt; is a block-level element,<br>
+                        meaning it creates indentations before and after itself.<br>
+                        This is usually used for dividing code into multiple easier-to-manage sections.<br>
+                        Make sure not to add &lt;div&gt; elements into inline elements (ie. &lt;a&gt;, &lt;span&gt;, etc).
                     </p>
                     <h4>Sample:</h4>
                     <pre><code>
@@ -626,9 +653,9 @@
                     <hr>
                     <h2>Headings &lt;h𝔁&gt;:</h2>
                     <p>
-                        Probably the most basic of all HTML elements, 
-                        the &lt;h𝔁&gt; function produces a heading. Depending on the number "𝔁" (must be between 1 and 6), 
-                        it produces a header. The lower "𝔁" is as a number, the bigger the heading. 
+                        Probably the most basic of all HTML elements, <br>
+                        the &lt;h𝔁&gt; function produces a heading. Depending on the number "𝔁" (must be between 1 and 6), <br>
+                        it produces a header. The lower "𝔁" is as a number, the bigger the heading. <br>
                         Below are examples of each header size, descending from greatest to smallest:
                     </p><br>
                     <h4>Sample:</h4>
@@ -654,9 +681,9 @@
                     <hr>
                     <h2>Paragraphs &lt;p&gt;</h2>
                     <p>
-                        The &lt;p&gt; element is the main way of printing out text. 
-                        It doesn't follow spacing within the code, unlike &lt;pre&gt;. 
-                        This very paragraph is an example of &lt;p&gt;. 
+                        The &lt;p&gt; element is the main way of printing out text. <br>
+                        It doesn't follow spacing within the code, unlike &lt;pre&gt;. <br>
+                        This very paragraph is an example of &lt;p&gt;.
                     </p><br>
                     <h4>Sample:</h4>
                     <pre><code>
@@ -675,8 +702,8 @@
                     <hr>
                     <h2>Line Breaks &lt;br&gt;:</h2>
                     <p>
-                        The element &lt;br&gt; can be put almost anywhere and creates a line break in the program.
-                        It doesn't have a closing tag.
+                        The element &lt;br&gt; can be put almost anywhere and creates a line break in the program.<br>
+                        It doesn't have a closing tag.<br>
                         It functions similarly to a newline character (\n) in languages such as Python.
                     </p><br>
                     <h4>Sample:</h4>
@@ -697,7 +724,7 @@
                     <hr>
                     <h2>Horizontal Rule &lt;hr&gt;:</h2>
                     <p>
-                        The &lt;hr&gt; element creates a horizontal line across the page to indicate a new part of the website.
+                        The &lt;hr&gt; element creates a horizontal line across the page to indicate a new part of the website.<br>
                         It is an empty element and does not require a closing tag.
                     </p><br>
                     <h4>Sample:</h4>
@@ -719,7 +746,7 @@
                     <hr>
                     <h2>Blockquote &lt;blockquote&gt;:</h2>
                     <p>
-                        The &lt;blockquote&gt; element is used to indicate that a section of text is quoted from an external source. 
+                        The &lt;blockquote&gt; element is used to indicate that a section of text is quoted from an external source. <br>
                         It must include a "cite" attribute, followed by a link to the source the text is quoted from.
                     </p>
                     <h4>Sample:</h4>
@@ -755,7 +782,7 @@
                     <hr>
                     <h2>Preformatted Text &lt;pre&gt;:</h2>
                     <p>
-                        The &lt;pre&gt; element is used to write pre-formatted text within a page.
+                        The &lt;pre&gt; element is used to write pre-formatted text within a page.<br>
                         It preserves all spaces and line breaks, and typically uses a thinner/monospace font.
                     </p>
                     <h4>Sample:</h4>
@@ -779,8 +806,8 @@
                     <hr>
                     <h2>Unordered List &lt;ul&gt;</h2>
                     <p>
-                        The element &lt;ul&gt; creates an unordered list,
-                        meaning the items are not numbered, but instead use bullet points.
+                        The element &lt;ul&gt; creates an unordered list,<br>
+                        meaning the items are not numbered, but instead use bullet points.<br>
                         As with all lists, they can be nested into each other.
                     </p>
                     <h4>Sample:</h4>
@@ -805,8 +832,7 @@
                     <hr>
                     <h2>Ordered List &lt;ol&gt;:</h2>
                     <p>
-                        The element &lt;ol&gt; creates an ordered list,
-                        meaning it is numbered.
+                        The element &lt;ol&gt; creates an ordered list, meaning it is numbered.<br>
                         As with all list, they can be nested.
                     </p>
                     <h4>Sample:</h4>
@@ -826,8 +852,8 @@
                     <br><br>
                     <h4>Ordered list - Attributes</h4>
                     <p>
-                        Unlike other types of lists,
-                        ordered lists have 3 special attributes that can be applied to them.
+                        Unlike other types of lists,<br>
+                        ordered lists have 3 special attributes that can be applied to them.<br>
                         The first is the "start" attribute, which can change the starting number of the list.
                     </p>
                     <h4>Sample:</h4>
@@ -941,9 +967,9 @@
                     <hr>
                     <h2>List Items &lt;li&gt;:</h2>
                     <p>
-                        The element &lt;li&gt; is used in creating items on a list.
-                        It is placed within a larger list element, such as &lt;ul&gt; or &lt;ol&gt;.
-                        It cannot be added into a &lt;dl&gt; list.
+                        The element &lt;li&gt; is used in creating items on a list.<br>
+                        It is placed within a larger list element, such as &lt;ul&gt; or &lt;ol&gt;.<br>
+                        It cannot be added into a &lt;dl&gt; list.<br>
                         Anything inside an &lt;li&gt; becomes a list item.
                     </p>
                     <h4>Sample:</h4>
@@ -968,7 +994,7 @@
                     <hr>
                     <h2>Description List &lt;dl&gt;:</h2>
                     <p>
-                        The element &lt;dl&gt; creates a list where each item has a description.
+                        The element &lt;dl&gt; creates a list where each item has a description.<br>
                         Unlike &lt;ol&gt; and &lt;ul&gt;, description lists use a different structure with &lt;dt&gt; and &lt;dd&gt; instead of &lt;li&gt;.
                     </p>
                     <h4>Sample:</h4>
@@ -999,8 +1025,8 @@
                     <hr>
                     <h2>Description Term &lt;dt&gt;:</h2>
                     <p>
-                        The element &lt;dt&gt; is similar to the element &lt;li&gt;,
-                        except specifically for a description list.
+                        The element &lt;dt&gt; is similar to the element &lt;li&gt;,<br>
+                        except specifically for a description list.<br>
                         However, &lt;dt&gt; acts as the term or label being described.
                     </p>
                     <h4>Sample:</h4>
@@ -1031,7 +1057,7 @@
                     <hr>
                     <h2>Description Term Details &lt;dd&gt;</h2>
                     <p>
-                        The element &lt;dd&gt; creates a description in the list.
+                        The element &lt;dd&gt; creates a description in the list.<br>
                         It is always paired with a &lt;dt&gt; element.
                     </p>
                     <h4>Sample:</h4>
@@ -1062,7 +1088,7 @@
                     <hr>
                     <h2>Menu &lt;menu&gt;:</h2>
                     <p>
-                        The &lt;menu&gt; element is used to define an unordered list of content.
+                        The &lt;menu&gt; element is used to define an unordered list of content.<br>
                         It is mainly used for interactive menus or context menus.
                     </p>
                     <h4>Sample:</h4>
@@ -1094,9 +1120,9 @@
                     <hr>
                     <h2>Image &lt;img&gt;:</h2>
                     <p>
-                        The &lt;img&gt; element creates a holding space for an image to be inserted.
-                        The &lt;img&gt; has no end tag.
-                        The &lt;img&gt; has 2 necessary attributes, those being "src" and "alt". 
+                        The &lt;img&gt; element creates a holding space for an image to be inserted.<br>
+                        The &lt;img&gt; has no end tag.<br>
+                        The &lt;img&gt; has 2 necessary attributes, those being "src" and "alt". <br>
                         Specifying width and height helps browsers reserve space for the image and improves preformance.
                     </p>
                     <h4>Sample:</h4>
@@ -1170,7 +1196,7 @@
                     <hr>
                     <h2>Source &lt;source&gt;:</h2>
                     <p>
-                        The &lt;source&gt; element is used to specify multiple media resources for any type of media.
+                        The &lt;source&gt; element is used to specify multiple media resources for any type of media.<br>
                         By using the media attribute with CSS media queries, you can change the media being displayed based on the viewport.
                     </p>
                     <h4>Sample:</h4>
@@ -1200,7 +1226,7 @@
                     <hr>
                     <h2>Pictures &lt;picture&gt;:</h2>
                     <p>
-                        The &lt;picture&gt; element is essentially a more adaptable version of &lt;img&gt;,
+                        The &lt;picture&gt; element is essentially a more adaptable version of &lt;img&gt;,<br>
                         being able to render different images (or different variants of the same image) depending on the viewport size or device capabilities.
                     </p>
                     <h4>Sample:</h4>
@@ -1225,8 +1251,8 @@
                     <hr>
                     <h2>Audio &lt;audio&gt;:</h2>
                     <p>
-                        The &lt;audio&gt; element is used to add audio content into a document.
-                        &lt;source&gt; elements are used inside of &lt;audio&gt;, 
+                        The &lt;audio&gt; element is used to add audio content into a document.<br>
+                        &lt;source&gt; elements are used inside of &lt;audio&gt;, <br>
                         however text may also be added after as a fallback measure in case the audio files don't work.
                     </p>
                     <h4>Sample:</h4>
@@ -1276,7 +1302,7 @@
                     <hr>
                     <h2>Video &lt;video&gt;:</h2>
                     <p>
-                        The &lt;video&gt; element is used to embed a video into a page.
+                        The &lt;video&gt; element is used to embed a video into a page.<br>
                         &lt;video&gt; typically includes one or more &lt;video&gt; elements along with text as an error message.
                     </p>
                     <h4>Sample:</h4>
@@ -1332,7 +1358,7 @@
                     <hr>
                     <h2>Figure Caption &lt;figcaption&gt;:</h2>
                     <p>
-                        The &lt;figcaption&gt; element defines a caption for any piece of media within a &lt;figure&gt; element.
+                        The &lt;figcaption&gt; element defines a caption for any piece of media within a &lt;figure&gt; element.<br>
                         It absolutely must be used inside a &lt;figure&gt; element.
                     </p>
                     <h4>Sample:</h4>
@@ -1352,7 +1378,7 @@
                     <hr>
                     <h2>Figure &lt;figure&gt;:</h2>
                     <p>
-                        The &lt;figure&gt; element is used to define media with a caption. 
+                        The &lt;figure&gt; element is used to define media with a caption. <br>
                         A &lt;figcaption&gt; element can work without &lt;figcaption&gt;, but including one provides context.
                     </p>
                     <h4>Sample:</h4>
@@ -1375,7 +1401,7 @@
                     <hr>
                     <h2>Track &lt;track&gt;:</h2>
                     <p>
-                        The &lt;track&gt; element is used to add text tracks (subtitles) for &lt;audio&gt; or &lt;video&gt; elements.
+                        The &lt;track&gt; element is used to add text tracks (subtitles) for &lt;audio&gt; or &lt;video&gt; elements.<br>
                         Tracks are formatted in WebVTT format (.vtt files).
                     </p>
                     <h4>Sample:</h4>
@@ -1430,7 +1456,7 @@
                     <hr>
                     <h2>Link &lt;a&gt;:</h2>
                     <p>
-                        The &lt;a&gt; element defines a hyperlink,
+                        The &lt;a&gt; element defines a hyperlink,<br>
                         which is used to link one page, rescource, or location to another.
                     </p>
                     <h4>Sample:</h4>
@@ -1447,10 +1473,10 @@
                     </p>
                     <h4>"download"</h4>
                     <p>
-                        The "download" attribute specifies to the browser to download the target rather than attempting to open it.
-                        It can be found in two forms.
-                        The first form is an empty attribute, telling the browser to download the item.
-                        The second form instead has a string value, 
+                        The "download" attribute specifies to the browser to download the target rather than attempting to open it.<br>
+                        It can be found in two forms.<br>
+                        The first form is an empty attribute, telling the browser to download the item.<br>
+                        The second form instead has a string value, <br>
                         telling the browser to save the file with the custome name provided (the string inside "download").
                     </p>
                     <h5>Sample:</h5>
@@ -1466,9 +1492,9 @@
                     <br>
                     <h4>"href"</h4>
                     <p>
-                        The "href" attribute is the only necessary attribute of the &lt;a&gt; element.
-                        The "href" attribute specifies the url/path that the link should go to.
-                        You can also use href="#top" or href="#" to link to the top of the current page.
+                        The "href" attribute is the only necessary attribute of the &lt;a&gt; element.<br>
+                        The "href" attribute specifies the url/path that the link should go to.<br>
+                        You can also use href="#top" or href="#" to link to the top of the current page.<br>
                         There are also two values that can be used in an "href" attribute, those being "mailto:[email]" (navigates to email) and "tel:[number]" (navigates to phone number).
                     </p>
                     <h5>Sample:</h5>
@@ -1478,7 +1504,7 @@
                     <br>
                     <h4>"hreflang"</h4>
                     <p>
-                        The "hreflang" attribute specifies the language of the page the href url links to.
+                        The "hreflang" attribute specifies the language of the page the href url links to.<br>
                         It is only used if the href attribute is set.
                     </p>
                     <h5>Sample:</h5>
@@ -1497,7 +1523,7 @@
                     <br>
                     <h4>"ping"</h4>
                     <p>
-                        The "ping" attribute can send a short message to a specified URL whenever a user clicks the link. 
+                        The "ping" attribute can send a short message to a specified URL whenever a user clicks the link. <br>
                         This attribute is useful for tracking/monitoring. 
                     </p>
                     <h5>Sample:</h5>
@@ -1507,9 +1533,9 @@
                     <br>
                     <h4>"referrerpolicy"</h4>
                     <p>
-                        The "referrerpolicy" attribute limits how much information the URL within the link is allowed to receive from the user.
-                        This is useful for security, performance, and compliance reasons.
-                        There are a couple different possible values for the attribute.
+                        The "referrerpolicy" attribute limits how much information the URL within the link is allowed to receive from the user.<br>
+                        This is useful for security, performance, and compliance reasons.<br>
+                        There are a couple different possible values for the attribute.<br>
                         They are:
                     </p>
                     <dl>
@@ -1535,7 +1561,7 @@
                     <br>
                     <h4>"rel"</h4>
                     <p>
-                        The "rel" attribute lets the browser know the relationship between the link and the site.
+                        The "rel" attribute lets the browser know the relationship between the link and the site.<br>
                         Here are its possible values:
                     </p>
                     <dl>
@@ -1579,7 +1605,7 @@
                     <br>
                     <h4>"target"</h4>
                     <p>
-                        Specifies how to open the linked url.
+                        Specifies how to open the linked url.<br>
                         There are five possible values:
                     </p>
                     <dl>
@@ -1601,7 +1627,8 @@
                     <br>
                     <h4>"type"</h4>
                     <p>
-                        Specifies the MIME type of the url. A list of possible values can be found <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank">here</a>.
+                        Specifies the MIME type of the url.<br>
+                        A list of possible values can be found <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank">here</a>.
                     </p>
                     <h4>"accesskey"</h4>
                     <p>
@@ -1619,9 +1646,9 @@
                     <hr>
                     <h2>Navigation &lt;nav&gt; (AGAIN):</h2>
                     <p>
-                        While the &lt;nav&gt; element may have already been explained in 3A,
-                        it is important to note &lt;nav&gt;'s importance in navigation through links.
-                        It is common to find the &lt;nav&gt; element containing links used for navigation.
+                        While the &lt;nav&gt; element may have already been explained in 3A,<br>
+                        it is important to note &lt;nav&gt;'s importance in navigation through links.<br>
+                        It is common to find the &lt;nav&gt; element containing links used for navigation.<br>
                         See 3A for information about &lt;nav&gt;.
                     </p>
                 </section>
@@ -1639,7 +1666,7 @@
                     <hr>
                     <h2>Label &lt;label&gt;:</h2>
                     <p>
-                        The &lt;label&gt; element is used to provide a label for certain elements.
+                        The &lt;label&gt; element is used to provide a label for certain elements.<br>
                         This is useful for screenreaders and for identifying certain elements.
                     </p>
                     <h4>Sample:</h4>
@@ -1651,8 +1678,8 @@
                     <label for="testMeter">This is a label for the meter</label>
                     <meter id="testMeter" min="0" low="3" optimum="5" high="7" max="10" value="2">2 out of 10</meter>
                     <p>
-                        The &lt;label&gt; element only has one possible attribute, the "for" attribute.
-                        It is used to provide the id of an element that it should affect.
+                        The &lt;label&gt; element only has one possible attribute, the "for" attribute.<br>
+                        It is used to provide the id of an element that it should affect.<br>
                         This attribute is highly recommended.
                     </p>
                 </section>
@@ -1663,7 +1690,7 @@
                     <hr>
                     <h2>Button &lt;button&gt;:</h2>
                     <p>
-                        The &lt;button&gt; element is used to create a clickable button. 
+                        The &lt;button&gt; element is used to create a clickable button. <br>
                         It is generally better to use &lt;button&gt; rather than creating a button using &lt;input&gt;.
                     </p>
                     <h4>Sample:</h4>
@@ -1730,7 +1757,7 @@
                     <hr>
                     <h2>Select &lt;select&gt;:</h2>
                     <p>
-                        The &lt;select&gt; element is used to create dropdown menus.
+                        The &lt;select&gt; element is used to create dropdown menus.<br>
                         It is most often used in forms.
                     </p>
                     <h4>Sample:</h4>
@@ -1774,7 +1801,7 @@
                     <hr>
                     <h2>Option &lt;option&gt;:</h2>
                     <p>
-                        The &lt;option&gt; element is used within &lt;select&gt; elements,
+                        The &lt;option&gt; element is used within &lt;select&gt; elements,<br>
                         to specify an option for the list.
                     </p>
                     <h4>Sample:</h4>
@@ -1792,7 +1819,8 @@
                         <option value="option3">Option 3</option>
                     </select>
                     <p>
-                        The &lt;option&gt; element also contains a list of attributes. They are as follows:
+                        The &lt;option&gt; element also contains a list of attributes. <br>
+                        They are as follows:
                     </p>
                         <dl>
                             <dt>"disabled"</dt>
@@ -1833,7 +1861,8 @@
                         </select>
                     </fieldset>
                     <p>
-                        The &lt;fieldset&gt; element has a few attributes that can be used. They are:
+                        The &lt;fieldset&gt; element has a few attributes that can be used. <br>
+                        They are:
                     </p>
                         <dl>
                             <dt>"disabled"</dt>
@@ -1881,7 +1910,7 @@
                     <hr>
                     <h2>Input &lt;input&gt;:</h2>
                     <p>
-                        The &lt;input&gt; element is used to create a single-line input field.
+                        The &lt;input&gt; element is used to create a single-line input field.<br>
                         It is the most important form element.
                     </p>
                     <h4>Sample:</h4>
@@ -2015,7 +2044,7 @@
                     <hr>
                     <h2>Text Area &lt;textarea&gt;:</h2>
                     <p>
-                        Similar to &lt;input&gt;, &lt;textarea&gt; is exactly the same except it allows for multi-line text input.
+                        Similar to &lt;input&gt;, &lt;textarea&gt; is exactly the same except it allows for multi-line text input.<br>
                         It is useful for whenever a user needs to submit a larger amount of text information.
                     </p>
                     <h4>Sample:</h4>
@@ -2059,7 +2088,7 @@
                     <hr>
                     <h2>Form &lt;form&gt;:</h2>
                     <p>
-                        The &lt;form&gt; element is used to create an HTML form designed to collect user input. 
+                        The &lt;form&gt; element is used to create an HTML form designed to collect user input. <br>
                         It can contain one or more form elements.
                     </p>
                     <h4>Sample:</h4>
@@ -2138,7 +2167,7 @@
                     <hr>
                     <h2>Caption &lt;caption&gt;:</h2>
                     <p>
-                        The &lt;caption&gt; element is used to add a caption to a table. 
+                        The &lt;caption&gt; element is used to add a caption to a table. <br>
                         It must be inserted immediately after the &lt;table&gt; opening tag.
                     </p>
                     <h4>Sample:</h4>
@@ -2163,9 +2192,9 @@
                     <hr>
                     <h2>Column &lt;col&gt;:</h2>
                     <p>
-                        The &lt;col&gt; element is used to specify column properties for each column within a &lt;colgroup&gt; element.
-                        They must ALWAYS be within the &lt;colgroup&gt; element.
-                        The only non-CSS attribute that can be applied to &lt;col&gt; (minus the universal attributes) is "span", indicating how many columns this should affect.
+                        The &lt;col&gt; element is used to specify column properties for each column within a &lt;colgroup&gt; element.<br>
+                        They must ALWAYS be within the &lt;colgroup&gt; element.<br>
+                        The only non-CSS attribute that can be applied to &lt;col&gt; (minus the universal attributes) is "span", indicating how many columns this should affect.<br>
                         Please note that only certain CSS properties (such as width, background, or border).
                     </p>
                     <h4>Sample:</h4>
@@ -2194,7 +2223,7 @@
                     <hr>
                     <h2>Column Group &lt;colgroup&gt;:</h2>
                     <p>
-                        The &lt;colgroup&gt; element is a container for all &lt;col&gt; elements.
+                        The &lt;colgroup&gt; element is a container for all &lt;col&gt; elements.<br>
                         It must be within a &lt;table&gt; element, after the caption and before any table data.
                     </p>
                     <h4>Sample:</h4>
@@ -2223,7 +2252,7 @@
                     <hr>
                     <h2>Table &lt;table&gt;:</h2>
                     <p>
-                        The &lt;table&gt; element is used to create a table,
+                        The &lt;table&gt; element is used to create a table,<br>
                         and is used as a container for all other table related elements.
                     </p>
                     <h4>Sample:</h4>
@@ -2246,8 +2275,8 @@
                     <hr>
                     <h2>Table Head &lt;thead&gt;:</h2>
                     <p>
-                        The &lt;thead&gt; element defines the head section of the table.
-                        This does not include &lt;caption&gt; or &lt;colgroup&gt;.
+                        The &lt;thead&gt; element defines the head section of the table.<br>
+                        This does not include &lt;caption&gt; or &lt;colgroup&gt;.<br>
                         The element includes all headers.
                     </p>
                     <h4>Sample:</h4>
@@ -2271,7 +2300,7 @@
                     <hr>
                     <h2>Table Body &lt;tbody&gt;:</h2>
                     <p>
-                        The &lt;tbody&gt; element defines the body section of the table. 
+                        The &lt;tbody&gt; element defines the body section of the table. <br>
                         This includes all table values (apart from footers).
                     </p>
                     <h4>Sample:</h4>
@@ -2295,7 +2324,7 @@
                     <hr>
                     <h2>Table Footer &lt;tfoot&gt;:</h2>
                     <p>
-                        The &lt;tfoot&gt; element defines the footer section of the table.
+                        The &lt;tfoot&gt; element defines the footer section of the table.<br>
                         This contains rows that summarize or provide footer information for the table.
                     </p>
                     <h4>Sample:</h4>
@@ -2320,7 +2349,7 @@
                     <hr>
                     <h2>Table Row &lt;tr&gt;:</h2>
                     <p>
-                        The &lt;tr&gt; element is used as a container for &lt;th&gt; or &lt;td&gt; elements.
+                        The &lt;tr&gt; element is used as a container for &lt;th&gt; or &lt;td&gt; elements.<br>
                         It is used to identify a table row.
                     </p>
                     <h4>Sample:</h4>
@@ -2343,7 +2372,7 @@
                     <hr>
                     <h2>Table Header &lt;th&gt;:</h2>
                     <p>
-                        The &lt;th&gt; element is used to define a header cell in a table. 
+                        The &lt;th&gt; element is used to define a header cell in a table. <br>
                         Any text within will be automatically centered and bolded.
                     </p>
                     <h4>Sample:</h4>
@@ -2426,10 +2455,10 @@
                     <hr>
                     <h2>Canvas &lt;canvas&gt;:</h2>
                     <p>
-                        The &lt;canvas&gt; element is used whenever a canvas is used in the site.
-                        The &lt;canvas&gt; creates a blank canvas, however JS is needed to draw inside of it.
-                        It acts as a container for the graphics, and any text within is displayed in case the canvas isn't available/doesn't work.
-                        To specify, JavaScript is used to draw graphics on the canvas by targeting it via it's id or another selector.
+                        The &lt;canvas&gt; element is used whenever a canvas is used in the site.<br>
+                        The &lt;canvas&gt; creates a blank canvas, however JS is needed to draw inside of it.<br>
+                        It acts as a container for the graphics, and any text within is displayed in case the canvas isn't available/doesn't work.<br>
+                        To specify, JavaScript is used to draw graphics on the canvas by targeting it via it's id or another selector.<br>
                         The JavaScript must always be OUTSIDE of the &lt;canvas&gt; element otherwise it becomes text.
                     </p>
                     <h4>Sample:</h4>
@@ -2453,7 +2482,7 @@
                     <hr>
                     <h2>Details &lt;details&gt;:</h2>
                     <p>
-                        The &lt;details&gt; element is used to add dropdown details that can show and hide on demand.
+                        The &lt;details&gt; element is used to add dropdown details that can show and hide on demand.<br>
                         This element must be used with the &lt;summary&gt; element (see below).
                     </p>
                     <h4>Sample:</h4>
@@ -2469,7 +2498,7 @@
                         <p>Hey, it works! This is only a paragraph, but we can also add other elements such as lists.</p>
                     </details>
                     <p>
-                        The &lt;details&gt; element only has one possible attribute, that being "open", meaning the dropdown is open by default.
+                        The &lt;details&gt; element only has two attributes, being "open", meaning the dropdown is open by default, and "closed", providing the opposite effect to "open".
                     </p>
                 </section>
 
@@ -2479,8 +2508,8 @@
                     <hr>
                     <h2>Summary &lt;summary&gt;:</h2>
                     <p>
-                        The &lt;summary&gt; element is used to provide a heading for a dropdown created by a &lt;details&gt; element.
-                        It always must be included within a &lt;details&gt; element, and always must be the first child.
+                        The &lt;summary&gt; element is used to provide a heading for a dropdown created by a &lt;details&gt; element.<br>
+                        It always must be included within a &lt;details&gt; element, and always must be the first child.<br>
                         The &lt;summary&gt; element can be clicked, triggering the &lt;details&gt; element to pop up.
                     </p>
                     <h4>Sample:</h4>
@@ -2492,7 +2521,8 @@
                     </code></pre>
                     <h4>Output:</h4>
                     <p>
-                        This element must be used within another element to produce a change. Please see above for an example involving &lt;summary&gt;.
+                        This element must be used within another element to produce a change. <br>
+                        Please see above for an example involving &lt;summary&gt;.
                     </p>
                 </section>
 
@@ -2502,8 +2532,8 @@
                     <hr>
                     <h2>Dialogue &lt;dialog&gt;:</h2>
                     <p>
-                        The &lt;dialog&gt; element creates a dialogue box.
-                        This is used for notifications, popups, and other similar applications.
+                        The &lt;dialog&gt; element creates a dialogue box.<br>
+                        This is used for notifications, popups, and other similar applications.<br>
                         Note to self - When programming, use <strong>DIALOG</strong> and not <strong>DIALOGUE</strong>!
                     </p>
                     <h4>Sample:</h4>
@@ -2527,7 +2557,7 @@
                     <hr>
                     <h2>Iframe &lt;iframe&gt;:</h2>
                     <p>
-                        The &lt;iframe&gt; element adds the possibility of adding another document within your own.
+                        The &lt;iframe&gt; element adds the possibility of adding another document within your own.<br>
                         This is useful for adding external content, such as embedding a Youtube video.
                     </p>
                     <h4>Sample:</h4>
@@ -2599,9 +2629,9 @@
                     <hr>
                     <h2>Meter &lt;meter&gt;:</h2>
                     <p>
-                        The &lt;meter&gt; element is used to show a scalar measurement within a specified range.
-                        It shouldn't be used to show progress, that must be shown through the &lt;progress&gt; element.
-                        Any text within the &lt;meter&gt; element is used for accessibility.
+                        The &lt;meter&gt; element is used to show a scalar measurement within a specified range.<br>
+                        It shouldn't be used to show progress, that must be shown through the &lt;progress&gt; element.<br>
+                        Any text within the &lt;meter&gt; element is used for accessibility.<br>
                         Always remember to add a &lt;label&gt;!
                     </p>
                     <h4>Sample:</h4>
@@ -2638,8 +2668,8 @@
                     <hr>
                     <h2>Progress &lt;progress&gt;:</h2>
                     <p>
-                        The &lt;progress&gt; element is used to create a progress bar.
-                        Any text within the &lt;progress&gt; element is used for accessibility.
+                        The &lt;progress&gt; element is used to create a progress bar.<br>
+                        Any text within the &lt;progress&gt; element is used for accessibility.<br>
                         Don't forget to add a label.
                     </p>
                     <h4>Sample:</h4>
@@ -2668,7 +2698,7 @@
                     <hr>
                     <h2>Template &lt;template&gt;:</h2>
                     <p>
-                        The &lt;template&gt; element is used to contain HTML content and hide it.
+                        The &lt;template&gt; element is used to contain HTML content and hide it.<br>
                         It can only be used if JavaScript is applied.
                     </p>
                     <h4>Sample:</h4>
@@ -2715,7 +2745,7 @@ Coming soon!
                     <hr>
                     <h2>Label &lt;label&gt;:</h2>
                     <p>
-                        The &lt;label&gt; element is used to provide a label for several other elements.
+                        The &lt;label&gt; element is used to provide a label for several other elements.<br>
                         It is proper to use &lt;label&gt; whenever possible.
                     </p>
                     <h4>Sample:</h4>
@@ -2750,9 +2780,9 @@ Coming soon!
                     <hr>
                     <h2>Abbreviation &lt;abbr&gt;:</h2>
                     <p>
-                        The element &lt;abbr&gt; lets the browser know that the text within is an abbreviation.
-                        This can also be used to let users know what the abbreviation means by including a "title" attribute within the element.
-                        When the user hovers over the text, the full unabbreviated version will be displayed.
+                        The element &lt;abbr&gt; lets the browser know that the text within is an abbreviation.<br>
+                        This can also be used to let users know what the abbreviation means by including a "title" attribute within the element.<br>
+                        When the user hovers over the text, the full unabbreviated version will be displayed.<br>
                         In general, it should be used on abbreviations, acronyms, and other similar cases.
                     </p>
                     <h4>Sample:</h4>
@@ -2773,7 +2803,7 @@ Coming soon!
                     <hr>
                     <h2>Address &lt;address&gt;:</h2>
                     <p>
-                        The &lt;address&gt; element is used to define that the text within is important contact information.
+                        The &lt;address&gt; element is used to define that the text within is important contact information.<br>
                         Most browsers render this text in italic, however this is not always the case.
                         It does not follow indentation.
                     </p>
@@ -2797,8 +2827,8 @@ Coming soon!
                     <hr>
                     <h2>Bold &lt;b&gt;:</h2>
                     <p>
-                        The &lt;b&gt; element is used to bold any text within.
-                        According to HTML5 specification, it should only be used for text with no semantic meaning. Whenever applicable, always try using
+                        The &lt;b&gt; element is used to bold any text within.<br>
+                        According to HTML5 specification, it should only be used for text with no semantic meaning. Whenever applicable, always try using<br>
                         other elements such as &lt;h𝔁&gt;, &lt;em&gt;, &lt;strong&gt;, and &lt;mark&gt;.
                     </p>
                     <h4>Sample:</h4>
@@ -2819,7 +2849,7 @@ Coming soon!
                     <hr>
                     <h2>Emphasis &lt;em&gt;:</h2>
                     <p>
-                        The element &lt;em&gt; is used to emphasize text.
+                        The element &lt;em&gt; is used to emphasize text.<br>
                         It makes any text within display italicized.
                     </p>
                     <h4>Sample:</h4>
@@ -2836,7 +2866,7 @@ Coming soon!
                     <hr>
                     <h2>Italicize &lt;i&gt;:</h2>
                     <p>
-                        The element &lt;i&gt; is used to italicize text.
+                        The element &lt;i&gt; is used to italicize text.<br>
                         It should be considered as a last resort if any other semantic text doesn't fit the use.
                     </p>
                     <h4>Sample:</h4>
@@ -2869,7 +2899,7 @@ Coming soon!
                     <hr>
                     <h2>Strong &lt;strong&gt;:</h2>
                     <p>
-                        The element &lt;strong&gt; is used to define text that is important.
+                        The element &lt;strong&gt; is used to define text that is important.<br>
                         Any content inside is displayed in bold.
                     </p>
                     <h4>Sample:</h4>
@@ -2883,5 +2913,6 @@ Coming soon!
         </div>
     </body>
 </html>
+
 
 
