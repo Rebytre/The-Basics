@@ -406,10 +406,10 @@
                 <h1 class="chapterTitleABC" id="PA">PART A: CONTENT STRUCTURE</h1>
 
 
-                <!--Navigation Menus-->
+                <!--Navigation Menu-->
                 <section>
                     <hr>
-                    <h2>Navigation Menus &lt;nav&gt;:</h2>
+                    <h2>Navigation Menu &lt;nav&gt;:</h2>
                     <p>
                         The function &lt;nav&gt; specifies to the browser which links are used for site navigation. <br>
                         The &lt;nav&gt; element only contains links that act as navigation for the site.<br>
@@ -487,31 +487,6 @@
                 </section>
 
 
-                <!--Address-->
-                <section>
-                    <hr>
-                    <h2>Address &lt;address&gt;:</h2>
-                    <p>
-                        The &lt;address&gt; element is used to define an author's or owner's contact information.<br>
-                        Contact information can be information such as an email address, phone number, address, URL, and more.
-                    </p>
-                    <h4>Sample:</h4>
-                    <pre><code>
-&lt;address&gt;
-    John Doe<br>
-    john@example.com<br>
-    123 Street, City
-&lt;/address&gt;
-                    </code></pre>
-                    <h4>Output:</h4>
-                    <address>
-                        John Doe<br>
-                        john@example.com<br>
-                        123 Street, City
-                    </address>
-                </section>
-
-
                 <!--Section-->
                 <section>
                     <hr>
@@ -579,6 +554,31 @@
                         This element does not produce a visible product/change,
                         so no outcome will be included.
                     </p>
+                </section>
+
+
+                <!--Address-->
+                <section>
+                    <hr>
+                    <h2>Address &lt;address&gt;:</h2>
+                    <p>
+                        The &lt;address&gt; element is used to define an author's or owner's contact information.<br>
+                        Contact information can be information such as an email address, phone number, address, URL, and more.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;address&gt;
+    John Doe<br>
+    john@example.com<br>
+    123 Street, City
+&lt;/address&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <address>
+                        John Doe<br>
+                        john@example.com<br>
+                        123 Street, City
+                    </address>
                 </section>
 
 
@@ -849,6 +849,31 @@
                 </section>
 
 
+                <!--Menu-->
+                <section>
+                    <hr>
+                    <h2>Menu &lt;menu&gt;:</h2>
+                    <p>
+                        The &lt;menu&gt; element is used to define an unordered list of content.<br>
+                        It is mainly used for interactive menus or context menus.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;menu&gt;
+    &lt;li&gt;Command 1&lt;/li&gt;
+    &lt;li&gt;Command 2&lt;/li&gt;
+    &lt;li&gt;Command 3&lt;/li&gt;
+&lt;/menu&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <menu>
+                        <li>Command 1</li>
+                        <li>Command 2</li>
+                        <li>Command 3</li>
+                    </menu>
+                </section>
+
+
                 <!--Ordered List-->
                 <section>
                     <hr>
@@ -1103,31 +1128,6 @@
                         <dd>Description 3</dd>
                     </dl>
                 </section>
-
-
-                <!--Menu-->
-                <section>
-                    <hr>
-                    <h2>Menu &lt;menu&gt;:</h2>
-                    <p>
-                        The &lt;menu&gt; element is used to define an unordered list of content.<br>
-                        It is mainly used for interactive menus or context menus.
-                    </p>
-                    <h4>Sample:</h4>
-                    <pre><code>
-&lt;menu&gt;
-    &lt;li&gt;Command 1&lt;/li&gt;
-    &lt;li&gt;Command 2&lt;/li&gt;
-    &lt;li&gt;Command 3&lt;/li&gt;
-&lt;/menu&gt;
-                    </code></pre>
-                    <h4>Output:</h4>
-                    <menu>
-                        <li>Command 1</li>
-                        <li>Command 2</li>
-                        <li>Command 3</li>
-                    </menu>
-                </section>
             </div>
 
 
@@ -1375,49 +1375,6 @@
                 </section>
 
 
-                <!--Figure Caption-->
-                <section>
-                    <hr>
-                    <h2>Figure Caption &lt;figcaption&gt;:</h2>
-                    <p>
-                        The &lt;figcaption&gt; element defines a caption for any piece of media within a &lt;figure&gt; element.<br>
-                        It absolutely must be used inside a &lt;figure&gt; element.
-                    </p>
-                    <h4>Sample:</h4>
-                    <pre><code>
-&lt;figure&gt;
-    &lt;img src="#" alt="text"&gt;
-    &lt;figcaption&gt;The photo above is really cool.&lt;/figcaption&gt;
-&lt;/figure&gt;
-                    </code></pre>
-                    <h4>Output:</h4>
-                    <p>This element must be used within another to work. See next section for an example.</p>
-                </section>
-
-
-                <!--Figure-->
-                <section>
-                    <hr>
-                    <h2>Figure &lt;figure&gt;:</h2>
-                    <p>
-                        The &lt;figure&gt; element is used to define media with a caption. <br>
-                        A &lt;figcaption&gt; element can work without &lt;figcaption&gt;, but including one provides context.
-                    </p>
-                    <h4>Sample:</h4>
-                    <pre><code></code></pre>
-&lt;figure&gt;
-    &lt;img src="#" type="image/jpg"&gt;
-    &lt;figcaption&gt;The photo above is really cool.&lt;/figcaption&gt;
-&lt;/figure&gt;
-                    </code></pre>
-                    <h4>Output:</h4>
-                    <figure>
-                        <img src="https://www.beautyofplanet.com/wp-content/uploads/2021/12/a1-50.jpg" type="image/jpg">
-                        <figcaption>The photo above is really cool.</figcaption>
-                    </figure>
-                </section>
-
-
                 <!--Track-->
                 <section>
                     <hr>
@@ -1464,6 +1421,49 @@
                         </dl>
                     </p>
                 </section>
+
+
+                <!--Figure-->
+                <section>
+                    <hr>
+                    <h2>Figure &lt;figure&gt;:</h2>
+                    <p>
+                        The &lt;figure&gt; element is used to define media with a caption. <br>
+                        A &lt;figure&gt; element can work without &lt;figcaption&gt;, but including one provides context.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code></code></pre>
+&lt;figure&gt;
+    &lt;img src="#" type="image/jpg"&gt;
+    &lt;figcaption&gt;The photo above is really cool.&lt;/figcaption&gt;
+&lt;/figure&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <figure>
+                        <img src="https://www.beautyofplanet.com/wp-content/uploads/2021/12/a1-50.jpg" type="image/jpg">
+                        <figcaption>The photo above is really cool.</figcaption>
+                    </figure>
+                </section>
+
+
+                <!--Figure Caption-->
+                <section>
+                    <hr>
+                    <h2>Figure Caption &lt;figcaption&gt;:</h2>
+                    <p>
+                        The &lt;figcaption&gt; element defines a caption for any piece of media within a &lt;figure&gt; element.<br>
+                        It absolutely must be used inside a &lt;figure&gt; element.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;figure&gt;
+    &lt;img src="#" alt="text"&gt;
+    &lt;figcaption&gt;The photo above is really cool.&lt;/figcaption&gt;
+&lt;/figure&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>This element must be used within another to work. See next section for an example.</p>
+                </section>   
             </div>
 
 
@@ -1683,6 +1683,76 @@
                 <h1 class="chapterTitleABC" id="PF">PART F: FORMS & INPUT</h1>
 
 
+                <!--Form-->
+                <section>
+                    <hr>
+                    <h2>Form &lt;form&gt;:</h2>
+                    <p>
+                        The &lt;form&gt; element is used to create an HTML form designed to collect user input. <br>
+                        It can contain one or more form elements.
+                    </p>
+                    <h4>Sample:</h4>
+                    <p>Placeholder text... (I'm not making an entire form for this right now, sorry!)</p>
+                    <p>
+                        The &lt;form&gt; element can have a few attributes that come with it, those being:
+                    </p>
+                        <dl>
+                            <dt>"accept-charset"</dt>
+                            <dd>- Specifies the character encodings that should be used for the form submission.</dd>
+                            <dt>"action"</dt>
+                            <dd>- Specifies where to send the form-data upon submission.</dd>
+                            <dt>"autocomplete"</dt>
+                            <dd>- Specifies whether a browser should enable autocomplete (yes/no).</dd>
+                            <dt>"enctype"</dt>
+                            <dd>
+                                - Specifies whether or not the information should be encrypted. Potential values (only if method="post"):
+                                <ul>
+                                    <li>"application/x-www-form-urlencoded" (Enabled by default, encodes all text before sending)</li>
+                                    <li>"multipart/form-data" (Necessary if the user wants to send a file through the form)</li>
+                                    <li>"text/plain" (Sends the info in plain text)</li>
+                                </ul>
+                            </dd>
+                            <dt>"method"</dt>
+                            <dd>
+                                - Specifies the HTTP method to use when sending data. Values are:
+                                <ul>
+                                    <li>"dialog" ((When the form is inside a &lt;dialogue&gt; element) Closes the dialog and causes a submit event to be executed on submission, without submitting data or clearing the form)</li>
+                                    <li>"get" (Default. Sends the data in name/value pairs.)</li>
+                                    <li>"post" (Sends the form-data as HTTP post transaction)</li>
+                                </ul>
+                            </dd>
+                            <dt>"name"</dt>
+                            <dd>- Specifies the name of the element.</dd>
+                            <dt>"novalidate"</dt>
+                            <dd>- Specifies that the form should not be validated upon submission.</dd>
+                            <dt>"rel"</dt>
+                            <dd>The "rel" attribute lets the browser know the relationship between the link and the site. Here are its possible values:
+                                <ul>
+                                    <li>"external" (The linked document is not on the same site.)</li>
+                                    <li>"help" (Provides a link to a help document.)</li>
+                                    <li>"license" (Provides a link to the licensing information for the document.)</li>
+                                    <li>"next" (Provides a link to the next document in the series.)</li>
+                                    <li>"nofollow" (Used on links that send to an unendorsed document (similar to a paid link). Necessary on Google.)</li>
+                                    <li>"noreferrer" (Makes the referrer unknown.)</li>
+                                    <li>"prev" (Previous document in the series.)</li>
+                                    <li>"search" (Links to a search tool used for the document.)</li>
+                                </ul>
+                            </dd>
+                            <dt>"target"</dt>
+                            <dd>
+                                Specifies where to open the response for submission.
+                                <ul>
+                                    <li>"_blank" (Opens url in a new window/tab.)</li>
+                                    <li>"_self" (Opens the linked document in the same frame (default)).</li>
+                                    <li>"_parent" (Opens the linked document in the parent frame.)</li>
+                                    <li>"_top" (Opens linked document in the full body of the window.)</li>
+                                    <li>"Frame name" (Not literally "framename", but rather the name of the target iframe.)</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </section>
+
+
                 <!--Label-->
                 <section>
                     <hr>
@@ -1854,76 +1924,6 @@
                             <dt>"value"</dt>
                             <dd>- Specifies the value that should be sent to the server.</dd>
                         </dl>
-                </section>
-
-
-                <!--Field Set-->
-                <section>
-                    <hr>
-                    <h2>Field Set &lt;fieldset&gt;:</h2>
-                    <p>
-                        The &lt;fieldset&gt; element is used to add a border around a form.
-                    </p>
-                    <h4>Sample:</h4>
-                    <pre><code>
-&lt;fieldset&gt;
-    &lt;select&gt;
-        &lt;option value="option1"&gt;Option 1&lt;/option&gt;
-        &lt;option value="option2"&gt;Option 2&lt;/option&gt;
-        &lt;option value="option3"&gt;Option 3&lt;/option&gt;
-    &lt;/select&gt;
-&lt;/fieldset&gt;
-                    </code></pre>
-                    <h4>Output:</h4>
-                    <fieldset>
-                        <select>
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
-                        </select>
-                    </fieldset>
-                    <p>
-                        The &lt;fieldset&gt; element has a few attributes that can be used. <br>
-                        They are:
-                    </p>
-                        <dl>
-                            <dt>"disabled"</dt>
-                            <dd>- Specifies that a group of elements within the &lt;fieldset&gt; element should be disabled.</dd>
-                            <dt>"form"</dt>
-                            <dd>- Specifies which form the element belongs to.</dd>
-                            <dt>"name"</dt>
-                            <dd>- Specifies a name for the &lt;fieldset&gt; element.</dd>
-                        </dl>
-                </section>
-
-
-                <!--Legend-->
-                <section>
-                    <hr>
-                    <h2>Legend &lt;legend&gt;:</h2>
-                    <p>
-                        The &lt;legend&gt; element provides a title that can be found within the &lt;fieldset&gt; element.
-                    </p>
-                    <h4>Sample:</h4>
-                    <pre><code>
-&lt;fieldset&gt;
-    &lt;legend&gt;Legend:&lt;/legend&gt;
-        &lt;select&gt;
-            &lt;option value="option1"&gt;Option 1&lt;/option&gt;
-            &lt;option value="option2"&gt;Option 2&lt;/option&gt;
-            &lt;option value="option3"&gt;Option 3&lt;/option&gt;
-        &lt;/select&gt;
-&lt;/fieldset&gt;
-                    </code></pre>
-                    <h4>Output:</h4>
-                    <fieldset>
-                        <legend>Legend:</legend>
-                        <select>
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
-                        </select>
-                    </fieldset>
                 </section>
 
 
@@ -2103,78 +2103,76 @@
                             <dd>- Specifies whether the text submitted should contain new lines. Value is either "hard (does wrap)" or "soft (don't wrap)".</dd>
                         </dl>
                 </section>
-
-
-                <!--Form-->
+                
+                
+                <!--Field Set-->
                 <section>
                     <hr>
-                    <h2>Form &lt;form&gt;:</h2>
+                    <h2>Field Set &lt;fieldset&gt;:</h2>
                     <p>
-                        The &lt;form&gt; element is used to create an HTML form designed to collect user input. <br>
-                        It can contain one or more form elements.
+                        The &lt;fieldset&gt; element is used to add a border around a form.
                     </p>
                     <h4>Sample:</h4>
-                    <p>Placeholder text... (I'm not making an entire form for this right now, sorry!)</p>
+                    <pre><code>
+&lt;fieldset&gt;
+    &lt;select&gt;
+        &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+        &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+        &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/fieldset&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <fieldset>
+                        <select>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </fieldset>
                     <p>
-                        The &lt;form&gt; element can have a few attributes that come with it, those being:
+                        The &lt;fieldset&gt; element has a few attributes that can be used. <br>
+                        They are:
                     </p>
                         <dl>
-                            <dt>"accept-charset"</dt>
-                            <dd>- Specifies the character encodings that should be used for the form submission.</dd>
-                            <dt>"action"</dt>
-                            <dd>- Specifies where to send the form-data upon submission.</dd>
-                            <dt>"autocomplete"</dt>
-                            <dd>- Specifies whether a browser should enable autocomplete (yes/no).</dd>
-                            <dt>"enctype"</dt>
-                            <dd>
-                                - Specifies whether or not the information should be encrypted. Potential values (only if method="post"):
-                                <ul>
-                                    <li>"application/x-www-form-urlencoded" (Enabled by default, encodes all text before sending)</li>
-                                    <li>"multipart/form-data" (Necessary if the user wants to send a file through the form)</li>
-                                    <li>"text/plain" (Sends the info in plain text)</li>
-                                </ul>
-                            </dd>
-                            <dt>"method"</dt>
-                            <dd>
-                                - Specifies the HTTP method to use when sending data. Values are:
-                                <ul>
-                                    <li>"dialog" ((When the form is inside a &lt;dialogue&gt; element) Closes the dialog and causes a submit event to be executed on submission, without submitting data or clearing the form)</li>
-                                    <li>"get" (Default. Sends the data in name/value pairs.)</li>
-                                    <li>"post" (Sends the form-data as HTTP post transaction)</li>
-                                </ul>
-                            </dd>
+                            <dt>"disabled"</dt>
+                            <dd>- Specifies that a group of elements within the &lt;fieldset&gt; element should be disabled.</dd>
+                            <dt>"form"</dt>
+                            <dd>- Specifies which form the element belongs to.</dd>
                             <dt>"name"</dt>
-                            <dd>- Specifies the name of the element.</dd>
-                            <dt>"novalidate"</dt>
-                            <dd>- Specifies that the form should not be validated upon submission.</dd>
-                            <dt>"rel"</dt>
-                            <dd>The "rel" attribute lets the browser know the relationship between the link and the site. Here are its possible values:
-                                <ul>
-                                    <li>"external" (The linked document is not on the same site.)</li>
-                                    <li>"help" (Provides a link to a help document.)</li>
-                                    <li>"license" (Provides a link to the licensing information for the document.)</li>
-                                    <li>"next" (Provides a link to the next document in the series.)</li>
-                                    <li>"nofollow" (Used on links that send to an unendorsed document (similar to a paid link). Necessary on Google.)</li>
-                                    <li>"noreferrer" (Makes the referrer unknown.)</li>
-                                    <li>"prev" (Previous document in the series.)</li>
-                                    <li>"search" (Links to a search tool used for the document.)</li>
-                                </ul>
-                            </dd>
-                            <dt>"target"</dt>
-                            <dd>
-                                Specifies where to open the response for submission.
-                                <ul>
-                                    <li>"_blank" (Opens url in a new window/tab.)</li>
-                                    <li>"_self" (Opens the linked document in the same frame (default)).</li>
-                                    <li>"_parent" (Opens the linked document in the parent frame.)</li>
-                                    <li>"_top" (Opens linked document in the full body of the window.)</li>
-                                    <li>"Frame name" (Not literally "framename", but rather the name of the target iframe.)</li>
-                                </ul>
-                            </dd>
+                            <dd>- Specifies a name for the &lt;fieldset&gt; element.</dd>
                         </dl>
                 </section>
-
-
+                
+                
+                <!--Legend-->
+                <section>
+                    <hr>
+                    <h2>Legend &lt;legend&gt;:</h2>
+                    <p>
+                        The &lt;legend&gt; element provides a title that can be found within the &lt;fieldset&gt; element.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+&lt;fieldset&gt;
+    &lt;legend&gt;Legend:&lt;/legend&gt;
+        &lt;select&gt;
+            &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+            &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+            &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+        &lt;/select&gt;
+&lt;/fieldset&gt;
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <fieldset>
+                        <legend>Legend:</legend>
+                        <select>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </fieldset>
+                </section>
             </div>
 
 
@@ -2209,15 +2207,13 @@
                 </section>
 
 
-                <!--Column-->
+                <!--Column Group-->
                 <section>
                     <hr>
-                    <h2>Column &lt;col&gt;:</h2>
+                    <h2>Column Group &lt;colgroup&gt;:</h2>
                     <p>
-                        The &lt;col&gt; element is used to specify column properties for each column within a &lt;colgroup&gt; element.<br>
-                        They must ALWAYS be within the &lt;colgroup&gt; element.<br>
-                        The only non-CSS attribute that can be applied to &lt;col&gt; (minus the universal attributes) is "span", indicating how many columns this should affect.<br>
-                        Please note that only certain CSS properties (such as width, background, or border).
+                        The &lt;colgroup&gt; element is a container for all &lt;col&gt; elements.<br>
+                        It must be within a &lt;table&gt; element, after the caption and before any table data.
                     </p>
                     <h4>Sample:</h4>
                     <pre><code>
@@ -2240,13 +2236,15 @@
                 </section>
 
 
-                <!--Column Group-->
+                <!--Column-->
                 <section>
                     <hr>
-                    <h2>Column Group &lt;colgroup&gt;:</h2>
+                    <h2>Column &lt;col&gt;:</h2>
                     <p>
-                        The &lt;colgroup&gt; element is a container for all &lt;col&gt; elements.<br>
-                        It must be within a &lt;table&gt; element, after the caption and before any table data.
+                        The &lt;col&gt; element is used to specify column properties for each column within a &lt;colgroup&gt; element.<br>
+                        They must ALWAYS be within the &lt;colgroup&gt; element.<br>
+                        The only non-CSS attribute that can be applied to &lt;col&gt; (minus the universal attributes) is "span", indicating how many columns this should affect.<br>
+                        Please note that only certain CSS properties (such as width, background, or border).
                     </p>
                     <h4>Sample:</h4>
                     <pre><code>
@@ -2646,6 +2644,30 @@
                 </section>
 
 
+                <!--Label-->
+                <section>
+                    <hr>
+                    <h2>Label &lt;label&gt;:</h2>
+                    <p>
+                        The &lt;label&gt; element is used to provide a label for several other elements.<br>
+                        It is proper to use &lt;label&gt; whenever possible.
+                    </p>
+                    <h4>Sample:</h4>
+                    <pre><code>
+Coming soon!
+                    </code></pre>
+                    <h4>Output:</h4>
+                    <p>Coming soon!</p>
+                    <p>
+                        The &lt;label&gt; element has two attributes. They are:
+                    </p>
+                    <dl>
+                        <dt>"for"</dt>
+                        <dd>- Specifies the relationship between the result of the calculation, and the elements used in the calculation.</dd>
+                        <dt>"form"</dt>
+                        <dd>- Specifies which form the element belongs to.</dd>
+                    </dl>
+                </section>
                 <!--Meter-->
                 <section>
                     <hr>
@@ -2715,26 +2737,6 @@
                 </section>
 
 
-                <!--Template-->
-                <section>
-                    <hr>
-                    <h2>Template &lt;template&gt;:</h2>
-                    <p>
-                        The &lt;template&gt; element is used to contain HTML content and hide it.<br>
-                        It can only be used if JavaScript is applied.
-                    </p>
-                    <h4>Sample:</h4>
-                    <pre><code>
-&lt;template&gt;
-    &lt;p&gt;This text is hidden.&lt;/p&gt;
-&lt;/template&gt;
-                    </code></pre>
-                    <h4>Output:</h4>
-                    <p>To have a visible output, this text needs JavaScript, which I am unfortunately not too familiar with as of yet. Until I update this, enjoy this image of a frog ;b</p>
-                    <img src="https://cdn.wcs.org/2024/03/13/21/14/05/2d2c6f1b-71c4-4390-b7e2-deb21a0bc11f/shutterstock_2331893385.jpg" type="image/jpg">
-                </section>
-
-
                 <!--Output-->
                 <section>
                     <hr>
@@ -2762,32 +2764,24 @@ Coming soon!
                 </section>
 
 
-                <!--Label-->
+                <!--Template-->
                 <section>
                     <hr>
-                    <h2>Label &lt;label&gt;:</h2>
+                    <h2>Template &lt;template&gt;:</h2>
                     <p>
-                        The &lt;label&gt; element is used to provide a label for several other elements.<br>
-                        It is proper to use &lt;label&gt; whenever possible.
+                        The &lt;template&gt; element is used to contain HTML content and hide it.<br>
+                        It can only be used if JavaScript is applied.
                     </p>
                     <h4>Sample:</h4>
                     <pre><code>
-Coming soon!
+&lt;template&gt;
+    &lt;p&gt;This text is hidden.&lt;/p&gt;
+&lt;/template&gt;
                     </code></pre>
                     <h4>Output:</h4>
-                    <p>Coming soon!</p>
-                    <p>
-                        The &lt;label&gt; element has two attributes. They are:
-                    </p>
-                    <dl>
-                        <dt>"for"</dt>
-                        <dd>- Specifies the relationship between the result of the calculation, and the elements used in the calculation.</dd>
-                        <dt>"form"</dt>
-                        <dd>- Specifies which form the element belongs to.</dd>
-                    </dl>
+                    <p>To have a visible output, this text needs JavaScript, which I am unfortunately not too familiar with as of yet. Until I update this, enjoy this image of a frog ;b</p>
+                    <img src="https://cdn.wcs.org/2024/03/13/21/14/05/2d2c6f1b-71c4-4390-b7e2-deb21a0bc11f/shutterstock_2331893385.jpg" type="image/jpg">
                 </section>
-                
-
             </div>
 
 
@@ -2935,6 +2929,7 @@ Coming soon!
         </div>
     </body>
 </html>
+
 
 
 
