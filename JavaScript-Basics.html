@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rebytre - JavaScript Basics</title>
+    </head>
+    <body>
+        <!--Variables-->
+        <div>
+            <hr>
+            <h1>Variables:</h1>
+
+
+            <!--Variable Declarations-->
+            <section>
+                <hr>
+                <h2>Variable Declarations:</h2>
+                <p>
+                    In JavaScript, you can create or declare variables by using one of three keywords:
+                    <ul>
+                        <li>"var"</li>
+                        <li>"let"</li>
+                        <li>"const"</li>
+                    </ul>
+                    Each keyword has its own characteristics and use cases.
+                    <ul>
+                        <li>"var" is function scoped, meaning it is only accessible within the function it is declared.</li>
+                        <li>"let" is block scoped, meaning it is only accessible within the block (a pair of curly braces) it is declared in.</li>
+                        <li>"const" is also block scoped, but it cannot be reassigned its value once it is set, with the exception of the constant being an object or an array.</li>
+                    </ul>
+                </p>
+                <h4>Examples:</h4>
+                <pre><code>
+// Declaring a variable using "var":
+var a = 10;
+console.log(a); // Outputs: 10
+
+// Declaring a variable using "let":
+let b = 5;
+console.log(b); // Outputs: 5
+
+// Declaring a variable using "const":
+const apple = "red";
+const apple = "green";
+console.log(c); // Outputs: "red" (or an error, since there has been an attempt to reassign the variable when it is a constant)
+                </code></pre>
+            </section>
+
+
+            <!--Variable Scopes-->
+            <section>
+                <hr>
+                <h2>Variable Scopes:</h2>
+                <p>
+                    Similar to almost any other programming language out there, information is stored within a certain scope, meaning they can only be accessed within a certain area of the code. <br>
+                    There are three main scopes in JavaScript:
+                    <ul>
+                        <li>Global</li>
+                        <li>Function</li>
+                        <li>Block</li>
+                    </ul>
+                    Each of them are different in terms of where they can be accessed.
+                    <ul>
+                        <li>Global - Can be accessed anywhere within the code. A variable with a global scope can be created by declaring a variable outside of any function or block.</li>
+                        <li>Function - Can only be accessed within the function it is declared in.</li>
+                        <li>Block - Can only be accessed within the block it is declared in (a block being a pair of curly braces: {}).</li>
+                    </ul>
+                    Here is what scopes the different variable types can be accessed in:
+                    <ul>
+                        <li>"var": function level</li>
+                        <li>"let": block level</li>
+                        <li>"const": block level</li>
+                    </ul>
+                    And some questions that may arise:
+                    <dl>
+                        <dt><i>If you were to declare any variable above its base scope, can you access it in any scope lower than the current scope?</i></dt>
+                        <dd>
+                            Yes, any scope below that will be able to access that variable, whether it be "let", "var", or "const". For example:
+                            <pre><code>
+function example() {
+    let x = 10 // The variable has a function scope
+
+    if (true) {
+        console.log(x + 5) // Despite "x" being in a higher scope, it can still be accessed within a lower scope.
+    }
+}
+                            </code></pre>
+                        </dd>
+                    </dl>
+                </p>
+            </section>
+
+
+            <!--Variable Hoisting-->
+            <section>
+                <hr>
+                <h2>Variable Hoisting:</h2>
+                <p>
+                    Hoisting refers to how 
+                </p>
+            </section>
+        </div>
+    </body>
+</html>
