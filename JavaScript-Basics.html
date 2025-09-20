@@ -95,9 +95,108 @@ function example() {
                 <hr>
                 <h2>Variable Hoisting:</h2>
                 <p>
-                    Hoisting refers to how 
+                    Variable hoisting refers to when a variable declaration will be compiled when running the code.<br>
+                    Only variables defined with "var" will be hoisted to the top of their scope. <br>
+                    Any other variables defined with "let" or const will not be hoisted. <br>
+                    One thing to note however, is that only the declaration of the variable will be hoisted, and not the initialization. <br>
+                    This means that if you try to access a "var" variable before it has been initialized, it will return "undefined".
                 </p>
+                <h4>Example:</h4>
+                <pre><code>
+console.log(x); // Outputs undefined, since it has been hoisted but not initialized.
+var x = 45;
+console.log(x); // Outputs 45, since the variable has now been initialized.
+
+// Replace "var" with "let" or "const" and it will throw an error.
+                </code></pre>
             </section>
+        </div>
+
+
+        <!--Data Types-->
+        <div>
+            <hr>
+            <h1>Data Types:</h1>
+
+
+            <!--Strings-->
+            <section>
+                <hr>
+                <h2>Strings:</h2>
+                <p>
+                    Javascript strings are similar to every other string in other programming languages. <br>
+                    They are used to represent text and can be enclosed in single quotes (' '), double quotes (" "), or backticks (` `). <br>
+                    Single quotes and double quotes are functionally the same, but backticks allow for string "interpolation", and multi-line strings. <br>
+                    String interpolation allows you to embed expressions or other variables directly withing the string by wrapping the expression or variable in ${}. <br>
+                </p>
+                <h4>Example:</h4>
+                <pre><code>
+let stringa = 'Hello!';
+let stringb = "How are you?";
+let stringc = `Daniel says: ${stringa} ${stringb}`; //String interpolation
+
+console.log(stringa);
+console.log(stringb);
+console.log(stringc);
+                </code></pre>
+            </section>
+
+
+            <!--Booleans-->
+            <section>
+                <hr>
+                <h2>Booleans:</h2>
+                <p>
+                    Booleans are a data type that can only have one of two values: "true" or "false". <br>
+                    They are most commonly used in conditional statements and loops to determine whether a block of code should execute. <br>
+                </p>
+                <h4>Example:</h4>
+                <pre><code>
+let exectuteCode = true; // Replace with false to see other output.
+
+if (executeCode) {
+    console.log("The code has executed.");
+} else {
+    console.log("the code has not executed.");
+}
+                </code></pre>
+            </section>
+
+
+            <!--Numbers-->
+            <section>
+                <hr>
+                <h2>Numbers:</h2>
+                <p>
+                    Numbers in Javascript are used to represent both integers and other similar numberic values. <br>
+                    They can be used in any mathematical operations.
+                    Here is a list of the different types of number variables:
+                </p>
+                <ul>
+                    <li>Integers - Whole Numbers eg. 1, 2, 3, ...</li>
+                    <li>Floats - Decimal Numbers eg. 1.58, 0.2, 3.14159, ...</li>
+                    <li>Hexadecimal Notation - Base 16 Numbers eg. 0xff, 0x5a, 0x2b2, ... (Make sure to always start the value with "0x")</li>
+                    <li>Binary Notation - Base 2 Numbers eg. 0b1, 0b101011, 0b11111110, ... (Make sure to always start the value with "0b")</li>
+                    <li>Exponential Notation - Numbers written in the form of a * 10^b eg. 1.5e2, 7.2e50, 12.2e-10, ... (Make sure to always end the value with "e" followed by the exponent value)</li>
+                </ul>
+                <p>
+                    Quick note: Javascript regards all of these values as being a "number" value, meaning if you use a "===" equality comparison operator, it will return true if the values are equal, regardless of the format of the number variable.
+                </p>
+                <h4>Example:</h4>
+                <pre><code>
+let intnum = 42; // Integer Type
+let binarynum = 0b101010; // Binary Notation Type
+
+if (intnum === binarynum) {
+    console.log("The two numbers are equal.");
+} else {
+    console.log("The two numbers are not equal.");
+}
+                </code></pre>
+            </section>
+
+
+            <!---->
         </div>
     </body>
 </html>
