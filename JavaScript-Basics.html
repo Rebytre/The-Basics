@@ -196,7 +196,105 @@ if (intnum === binarynum) {
             </section>
 
 
-            <!---->
+            <!--Big Integers-->
+            <section>
+                <hr>
+                <h2>Big Integers:</h2>
+                <p>
+                    Big integers are a special data type in Javascript that can represent whole numbers larger than the maximum or minimum safe integer values. <br>
+                    This is useful when dealing with very large numbers, as regular number types in Javascript can only safely represent integers between -(2^53 - 1) and 2^53 - 1. <br>
+                    They are created by appending "n" to the end of an integer value, regardless of how large or small the integer is. <br>
+                    You may not add a big integer to any other number type, and vice versa. <br>
+                    You may only add big integers to other big integers, so it is key you first convert any other number types to big integers before performing any calculations.
+                </p>
+                <h4>Example:</h4>
+                <pre><code>
+let bigInt1 = 100000000000000000n; //Big Integer Type.
+let bigInt2 = BigInt(0b100010101111011011010110101011110111); //Binary Notation to Big Integer
+                </code></pre>
+            </section>
+
+
+            <!--Undefined-->
+            <section>
+                <hr>
+                <h2>Undefined:</h2>
+                <p>
+                    The undefined data type represents a variable that has been declared but has not yet been assigned a value. <br>
+                    If you try to access a variable that is undefined, it will return the value "undefined". <br>
+                    Undefined is a placeholder value that indicates the absence of a value, which is different from null, which represents the absence of any value.
+                </p>
+                <h4>Example:</h4>
+                <pre><code>
+let undefinedVar; // Variable has been declared, but has not been assigned any value
+console.log(undefinedVar); // Outputs "undefined"
+                </code></pre>
+            </section>
+
+
+            <!--Null-->
+            <section>
+                <hr>
+                <h2>Null:</h2>
+                <p>
+                    Null is a special value in Javascript that represents the absence of any value. <br>
+                    While undefined indicated that a variable has been declared but has not yet been an assigned a value, null is used to explicity indicate that the variable has no value. <br>
+                    Null also has several interesting properties:
+                </p>
+                <ul>
+                    <li>Null is an object type, despite being being a placeholder to indicate that the variable has no value.</li>
+                    <li>Null is considered falsy.</li>
+                    <li>Null acts as 0 in mathematical operations.</li>
+                </ul>
+                <h4>Example:</h4>
+                <pre><code>
+let nullVar = null; // Given a value of null
+console.log (nullVar); // Outputs "null"
+console.log (nullVar - 2); //Outputs "-2", since null acts as 0
+console.log (typeof nullVar); // Outputs "object"
+
+if (nullVar) {
+    console.log("This shouldn't print.");
+} else {
+    console.log("This should print, since null is falsy.");
+}
+                </code></pre>
+            </section>
+
+
+            <!--Special Data Type Features-->
+            <hr>
+            <h1>Special Data Type Features:</h1>
+            <section>
+
+
+                <!--TypeOf Operator-->
+                <section>
+                    <hr>
+                    <h2>"typeof" Operator:</h2>
+                    <p>
+                        The "typeof" operator is a built-in operator in Javascript that is used to determine the data type of a variable or expression. <br>
+                        It returns a string that indicated the type of data being evaluated. <br>
+                    </p>
+                    <h4>Example:</h4>
+                    <pre><code>
+let variable = undefined; // Change the value of "variable" to see different outputs
+console.log(typeof variable); // Prints out the type of the data being evaluated.
+                    </code></pre>
+                </section>
+
+
+                <!--Objects-->
+                <section>
+                    <hr>
+                    <h2>Objects:</h2>
+                    <p>
+                        Objects are a special data type that can contain multiple values within a single object-type variable. <br>
+                        
+                    </p>
+                </section>
+            </section>
         </div>
     </body>
 </html>
+
