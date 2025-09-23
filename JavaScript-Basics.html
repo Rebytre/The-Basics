@@ -290,11 +290,30 @@ console.log(typeof variable); // Prints out the type of the data being evaluated
                     <h2>Objects:</h2>
                     <p>
                         Objects are a special data type that can contain multiple values within a single object-type variable. <br>
-                        
+                        They can be created by defining a variable and then putting any following values within curly brackets "{}". <br>
+                        Any values within the object must have a comma at the end if another value is added afterwards. <br>
+                        For any values over a single word must be put in air quotes. <br>
+                        To call upon a object value, you may either call it by using <i>objectname</i>.<b>valuename</b>,<br>
+                        or alternatively, in the case that the value is within quotes, you may use <i>objectname</i>["<b>valuename</b>"].
                     </p>
+                    <h4>Example:</h4>
+                    <pre><code>
+let objectVar = {
+    name: "Dan",
+    age: 12,
+    "plays football": true
+}
+
+objectVar.name = "Michael";
+
+if (objectVar["plays football"] === true) {
+    console.log(objectVar, "hello");
+}
+                    </code></pre>
                 </section>
             </section>
         </div>
     </body>
 </html>
+
 
