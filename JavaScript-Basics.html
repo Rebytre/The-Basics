@@ -2,6 +2,22 @@
 <html>
     <head>
         <title>Rebytre - JavaScript Basics</title>
+        <script defer>
+            function startCalculator() {
+                let variableA = Number(prompt("What is the value of the first variable?"))
+                let operator = prompt("What is the operator you want to use?")
+                let variableB = Number(prompt("What is the value of the second variable?"))
+                if (operator == "+") {
+                    alert((variableA + variableB), "is your answer.")
+                } else if (operator == "-") {
+                    alert((variableA - variableB), "is your answer.")
+                } else if (operator == "*" || operator == "x") {
+                    alert((variableA * variableB), "is your answer.")
+                } else if (operator == "/") {
+                    alert((variableA / variableB), "is your answer.")
+                }
+            }
+        </script>
     </head>
     <body>
         <!--Variables-->
@@ -311,9 +327,97 @@ if (objectVar["plays football"] === true) {
 }
                     </code></pre>
                 </section>
+
+
+                <!--Type Casting-->
+                <section>
+                    <hr>
+                    <h2>Type Casting:</h2>
+                    <p>
+                        Type casting is the process of converting one type of variable to another. <br>
+                        This can be done either explicitly or implicitly.
+                    </p>
+                    <h4>Example:</h4>
+                    <pre><code>
+// Converting a number-type to a string-type: (Also explicit type casting example)
+let varA = 5100;
+
+varA = string(varA) // Explicitly told to type cast
+console.log(varA) // Should return "5100" as a string.
+
+// Implicit Type Casting (Unspecified outcome)
+let varB = "hi there";
+let varC = 10;
+let varBC = varB + varC
+
+console.log(varBC) // Program will most likely convert outcome to string, but it is not explicitly told to convert into a string.
+
+
+                    </code></pre>
+                </section>
+            </section>
+
+
+            <!--Data Structures-->
+            <section>
+                <hr>
+                <h1>Data Structures</h1>
+
+
+                <!--Indexed Collections-->
+                <section>
+                    <hr>
+                    <h2>Indexed Collections:</h2>
+                    <p>
+                        Indexed collections are collections that have numeric indicies.
+                    </p>
+                </section>
+            </section>
+        </div>
+
+
+        <!--Test Understanding-->
+        <div>
+            <hr>
+            <h1>Test Understanding:</h1>
+
+
+            <!--Easy Projects-->
+            <section>
+                <hr>
+                <h2>Easy Projects:</h2>
+
+
+                <!--Calculator (!Website)-->
+                <section>
+                    <hr>
+                    <h3>Calculator (!Website)</h3>
+                    <p>
+                        Calculator using prompt and alert to take inputs and output. No graphical interface.
+                    </p>
+                    <button onclick="startCalculator()">Calculator</button>
+                    <h4>Code:</h4>
+                    <pre><code>
+function startCalculator() {
+                let variableA = Number(prompt("What is the value of the first variable?"))
+                let operator = prompt("What is the operator you want to use?")
+                let variableB = Number(prompt("What is the value of the second variable?"))
+                if (operator == "+") {
+                    alert((variableA + variableB), "is your answer.")
+                } else if (operator == "-") {
+                    alert((variableA - variableB), "is your answer.")
+                } else if (operator == "*" || operator == "x") {
+                    alert((variableA * variableB), "is your answer.")
+                } else if (operator == "/") {
+                    alert((variableA / variableB), "is your answer.")
+                }
+            }
+                    </code></pre>
+                </section>
             </section>
         </div>
     </body>
 </html>
+
 
 
